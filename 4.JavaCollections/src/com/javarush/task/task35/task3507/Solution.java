@@ -42,7 +42,7 @@ public class Solution {
 
                         Class clazz = loader.load(file.toPath(), packageName);
 
-                        //Reflection;
+                        //Reflection:
 
                         //flags for check
                         boolean isImplAnimals = false;
