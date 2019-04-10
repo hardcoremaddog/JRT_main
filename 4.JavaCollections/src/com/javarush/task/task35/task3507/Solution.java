@@ -5,14 +5,22 @@ import java.lang.reflect.Constructor;
 import java.util.HashSet;
 import java.util.Set;
 
-
 /* 
 ClassLoader - что это такое?
 */
 public class Solution {
 
     public static void main(String[] args) {
-        Set<? extends Animal> allAnimals = getAllAnimals(Solution.class.getProtectionDomain().getCodeSource().getLocation().getPath() + Solution.class.getPackage().getName().replaceAll("[.]", "/") + "/data");
+        Set<? extends Animal> allAnimals = getAllAnimals
+                (Solution.class
+                        .getProtectionDomain()
+                        .getCodeSource()
+                        .getLocation()
+                        .getPath()
+                        + Solution.class
+                        .getPackage()
+                        .getName()
+                        .replaceAll("[.]", "/") + "/data");
         System.out.println(allAnimals);
     }
 
@@ -20,11 +28,12 @@ public class Solution {
         Set<Animal> allAnimals = new HashSet<>();
 
         try {
+            //get list of files from path
             File[] list = new File(pathToAnimals).listFiles();
 
             if (list != null) {
                 for (File file : list) {
-                    //if is .class file ->
+                    //if it's .class file ->
                     if (file.isFile() && file.getName().endsWith(".class")) {
 
                         String packageName = Solution.class.getPackage().getName() + ".data";
@@ -35,6 +44,7 @@ public class Solution {
 
                         //Reflection;
 
+                        //flags for check
                         boolean isImplAnimals = false;
                         boolean haveDefaultConstructor = false;
 
@@ -53,7 +63,7 @@ public class Solution {
                                 haveDefaultConstructor = true;
                             }
 
-                        //all good -> add to set
+                        //check flags. all good? -> add to set
                         if (isImplAnimals && haveDefaultConstructor) {
                             Animal animal = (Animal) clazz.newInstance();
                             allAnimals.add(animal);
