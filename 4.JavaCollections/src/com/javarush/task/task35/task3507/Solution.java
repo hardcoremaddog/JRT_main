@@ -24,6 +24,7 @@ public class Solution {
 
             if (list != null) {
                 for (File file : list) {
+                    //if is .class file ->
                     if (file.isFile() && file.getName().endsWith(".class")) {
 
                         String packageName = Solution.class.getPackage().getName() + ".data";
@@ -32,32 +33,31 @@ public class Solution {
 
                         Class clazz = loader.load(file.toPath(), packageName);
 
-                        int score = 0;
-                        //find interface Animal
+                        //Reflection;
+
+                        boolean isImplAnimals = false;
+                        boolean haveDefaultConstructor = false;
+
+                        //implement Animal interface?
                         Class[] interfaces = clazz.getInterfaces();
                         for (Class interf : interfaces)
                             if (interf.getSimpleName().equals("Animal")) {
-                                score++;
+                                isImplAnimals = true;
                                 break;
                             }
 
-                        //Find default constuctor
+                        //have default constructor?
                         Constructor[] constructors = clazz.getConstructors();
                         for (Constructor constructor : constructors)
                             if (constructor.getParameterCount() == 0) {
-                                score++;
+                                haveDefaultConstructor = true;
                             }
 
-                        //if all ok, add to set
-                        if (score == 2)
-                            try {
-                                Animal animal = (Animal) clazz.newInstance();
-                                allAnimals.add(animal);
-                            } catch (InstantiationException e) {
-                                e.printStackTrace();
-                            } catch (IllegalAccessException e) {
-                                e.printStackTrace();
-                            }
+                        //all good -> add to set
+                        if (isImplAnimals && haveDefaultConstructor) {
+                            Animal animal = (Animal) clazz.newInstance();
+                            allAnimals.add(animal);
+                        }
                     }
                 }
             }
