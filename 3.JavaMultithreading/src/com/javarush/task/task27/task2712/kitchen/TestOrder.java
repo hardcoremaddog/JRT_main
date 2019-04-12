@@ -12,7 +12,6 @@ public class TestOrder extends Order {
 		super(tablet);
 	}
 
-	@Override
 	protected void initDishes() throws IOException {
 
 		ConsoleHelper.writeMessage(Dish.allDishesToString());
