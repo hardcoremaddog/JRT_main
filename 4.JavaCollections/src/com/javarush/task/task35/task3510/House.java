@@ -1,7 +1,6 @@
 package com.javarush.task.task35.task3510;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 /* 
@@ -36,16 +35,16 @@ public class House <T> {
         Cat barsik = new Cat("Barsik");
         Kitten keksik = new Kitten("Keksik");
 
-        House<Dog> dogHouse = new House<>();
+        House<Dog> dogHouse = new House();
         dogHouse.enter(bruno);
         dogHouse.enter(larsik);
-        dogHouse.enter(barsik);
+//        dogHouse.enter(barsik);
         System.out.println(dogHouse.toString());
 
-        House<Cat> catHouse = new House<>();
+        House<Cat> catHouse = new House();
         catHouse.enter(barsik);
         catHouse.enter(keksik);
-        catHouse.enter(bruno);
+//        catHouse.enter(bruno);
         System.out.println(catHouse.toString());
     }
 }
