@@ -20,7 +20,6 @@ public class Entry implements Serializable {
 		return key;
 	}
 
-
 	public String getValue() {
 		return value;
 	}
