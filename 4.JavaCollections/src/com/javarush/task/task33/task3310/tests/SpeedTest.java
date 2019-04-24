@@ -13,13 +13,13 @@ import java.util.Set;
 
 public class SpeedTest {
 
-//	15.2. Добавь в класс метод
+//	15.2. Р”РѕР±Р°РІСЊ РІ РєР»Р°СЃСЃ РјРµС‚РѕРґ
 // 	long getTimeToGetIds(Shortener shortener, Set<String> strings, Set<Long> ids).
 	public long getTimeToGetIds(Shortener shortener, Set<String> strings, Set<Long> ids) {
-//		Он должен возвращать время в миллисекундах
-//		необходимое для получения идентификаторов
-//		для всех строк из strings.
-//		Идентификаторы должны быть записаны в ids.
+//		РћРЅ РґРѕР»Р¶РµРЅ РІРѕР·РІСЂР°С‰Р°С‚СЊ РІСЂРµРјСЏ РІ РјРёР»Р»РёСЃРµРєСѓРЅРґР°С…
+//		РЅРµРѕР±С…РѕРґРёРјРѕРµ РґР»СЏ РїРѕР»СѓС‡РµРЅРёСЏ РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂРѕРІ
+//		РґР»СЏ РІСЃРµС… СЃС‚СЂРѕРє РёР· strings.
+//		РРґРµРЅС‚РёС„РёРєР°С‚РѕСЂС‹ РґРѕР»Р¶РЅС‹ Р±С‹С‚СЊ Р·Р°РїРёСЃР°РЅС‹ РІ ids.
 
 		Date dateStart = new Date();
 		for (String string : strings) {
@@ -29,12 +29,12 @@ public class SpeedTest {
 		return dateStop.getTime() - dateStart.getTime();
 	}
 
-//	15.3. Добавь в класс метод
+//	15.3. Р”РѕР±Р°РІСЊ РІ РєР»Р°СЃСЃ РјРµС‚РѕРґ
 //	long getTimeToGetStrings(Shortener shortener, Set<Long> ids, Set<String> strings).
 	public long getTimeToGetStrings(Shortener shortener, Set<Long> ids, Set<String> strings) {
-//		Он должен возвращать время в миллисекундах
-// 		необходимое для получения строк для всех идентификаторов из ids.
-// 		Строки должны быть записаны в strings.
+//		РћРЅ РґРѕР»Р¶РµРЅ РІРѕР·РІСЂР°С‰Р°С‚СЊ РІСЂРµРјСЏ РІ РјРёР»Р»РёСЃРµРєСѓРЅРґР°С…
+// 		РЅРµРѕР±С…РѕРґРёРјРѕРµ РґР»СЏ РїРѕР»СѓС‡РµРЅРёСЏ СЃС‚СЂРѕРє РґР»СЏ РІСЃРµС… РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂРѕРІ РёР· ids.
+// 		РЎС‚СЂРѕРєРё РґРѕР»Р¶РЅС‹ Р±С‹С‚СЊ Р·Р°РїРёСЃР°РЅС‹ РІ strings.
 
 		Date dateStart = new Date();
 		for (Long id : ids) {
@@ -44,44 +44,44 @@ public class SpeedTest {
 		return dateStop.getTime() - dateStart.getTime();
 	}
 
-//	15.4. Добавь в класс SpeedTest тест testHashMapStorage().
+//	15.4. Р”РѕР±Р°РІСЊ РІ РєР»Р°СЃСЃ SpeedTest С‚РµСЃС‚ testHashMapStorage().
 	@Test
 	public void testHashMapStorage() {
-//		Он должен:
-//		15.4.1. Создавать два объекта типа Shortener,
-//		один на базе HashMapStorageStrategy,
-//		второй на базе HashBiMapStorageStrategy.
-//		Назовем их shortener1 и shortener2.
+//		РћРЅ РґРѕР»Р¶РµРЅ:
+//		15.4.1. РЎРѕР·РґР°РІР°С‚СЊ РґРІР° РѕР±СЉРµРєС‚Р° С‚РёРїР° Shortener,
+//		РѕРґРёРЅ РЅР° Р±Р°Р·Рµ HashMapStorageStrategy,
+//		РІС‚РѕСЂРѕР№ РЅР° Р±Р°Р·Рµ HashBiMapStorageStrategy.
+//		РќР°Р·РѕРІРµРј РёС… shortener1 Рё shortener2.
 		Shortener shortener1 = new Shortener(new HashMapStorageStrategy());
 		Shortener shortener2 = new Shortener(new HashBiMapStorageStrategy());
 
-//		15.4.2. Генерировать с помощью Helper 10000 строк
-// 		и помещать их в сет со строками, назовем его origStrings.
+//		15.4.2. Р“РµРЅРµСЂРёСЂРѕРІР°С‚СЊ СЃ РїРѕРјРѕС‰СЊСЋ Helper 10000 СЃС‚СЂРѕРє
+// 		Рё РїРѕРјРµС‰Р°С‚СЊ РёС… РІ СЃРµС‚ СЃРѕ СЃС‚СЂРѕРєР°РјРё, РЅР°Р·РѕРІРµРј РµРіРѕ origStrings.
 		Set<String> origStrings = new HashSet<>();
 		for (int i = 0; i < 10000; i++) {
 			origStrings.add(Helper.generateRandomString());
 		}
-//		15.4.3. Получать время получения идентификаторов для origStrings
-// 		(вызывать метод getTimeToGetIds для shortener1, а затем для shortener2).
+//		15.4.3. РџРѕР»СѓС‡Р°С‚СЊ РІСЂРµРјСЏ РїРѕР»СѓС‡РµРЅРёСЏ РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂРѕРІ РґР»СЏ origStrings
+// 		(РІС‹Р·С‹РІР°С‚СЊ РјРµС‚РѕРґ getTimeToGetIds РґР»СЏ shortener1, Р° Р·Р°С‚РµРј РґР»СЏ shortener2).
 		Set<Long> newLongs = new HashSet<>();
 
 		long shortener1TimeToGetIds = getTimeToGetIds(shortener1, origStrings, newLongs);
 		long shortener2TimeToGetIds = getTimeToGetIds(shortener2, origStrings, newLongs);
 
-//		15.4.4. Проверять с помощью junit, что время,
-// 		полученное в предыдущем пункте для shortener1 больше, чем для shortener2.
+//		15.4.4. РџСЂРѕРІРµСЂСЏС‚СЊ СЃ РїРѕРјРѕС‰СЊСЋ junit, С‡С‚Рѕ РІСЂРµРјСЏ,
+// 		РїРѕР»СѓС‡РµРЅРЅРѕРµ РІ РїСЂРµРґС‹РґСѓС‰РµРј РїСѓРЅРєС‚Рµ РґР»СЏ shortener1 Р±РѕР»СЊС€Рµ, С‡РµРј РґР»СЏ shortener2.
 		Assert.assertTrue(shortener1TimeToGetIds > shortener2TimeToGetIds);
 
-//		15.4.5. Получать время получения строк
-// 		(вызывать метод getTimeToGetStrings для shortener1 и shortener2).
+//		15.4.5. РџРѕР»СѓС‡Р°С‚СЊ РІСЂРµРјСЏ РїРѕР»СѓС‡РµРЅРёСЏ СЃС‚СЂРѕРє
+// 		(РІС‹Р·С‹РІР°С‚СЊ РјРµС‚РѕРґ getTimeToGetStrings РґР»СЏ shortener1 Рё shortener2).
 		Set<String> newStrings = new HashSet<>();
 		long shortener1TimeToGetStrings = getTimeToGetStrings(shortener1, newLongs, newStrings);
 		long shortener2TimeToGetStrings = getTimeToGetStrings(shortener2, newLongs, newStrings);
 
-//		15.4.6. Проверять с помощью junit, что время,
-// 		полученное в предыдущем пункте для shortener1 примерно равно времени для shortener2.
-// 		Используй метод assertEquals(float expected, float actual, float delta).
-// 		В качестве delta можно использовать 30, этого вполне достаточно для наших экспериментов.
+//		15.4.6. РџСЂРѕРІРµСЂСЏС‚СЊ СЃ РїРѕРјРѕС‰СЊСЋ junit, С‡С‚Рѕ РІСЂРµРјСЏ,
+// 		РїРѕР»СѓС‡РµРЅРЅРѕРµ РІ РїСЂРµРґС‹РґСѓС‰РµРј РїСѓРЅРєС‚Рµ РґР»СЏ shortener1 РїСЂРёРјРµСЂРЅРѕ СЂР°РІРЅРѕ РІСЂРµРјРµРЅРё РґР»СЏ shortener2.
+// 		РСЃРїРѕР»СЊР·СѓР№ РјРµС‚РѕРґ assertEquals(float expected, float actual, float delta).
+// 		Р’ РєР°С‡РµСЃС‚РІРµ delta РјРѕР¶РЅРѕ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ 30, СЌС‚РѕРіРѕ РІРїРѕР»РЅРµ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РґР»СЏ РЅР°С€РёС… СЌРєСЃРїРµСЂРёРјРµРЅС‚РѕРІ.
 		Assert.assertEquals(shortener1TimeToGetStrings, shortener2TimeToGetStrings, 30);
 	}
 }
