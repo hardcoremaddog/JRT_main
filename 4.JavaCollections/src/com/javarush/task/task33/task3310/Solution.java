@@ -15,8 +15,8 @@ public class Solution {
 //		testStrategy(new FileStorageStrategy(), 1000);
 		testStrategy(new OurHashBiMapStorageStrategy(), 10000);
 		testStrategy(new HashBiMapStorageStrategy(), 10000);
-		testStrategy(new DualHashBidiMapStorageStrategy(), 10000);
 	}
+
 
 //	Этот метод должен для переданного множества строк возвращать множество идентификаторов.
 //	Идентификатор для каждой отдельной строки нужно получить, используя shortener.
