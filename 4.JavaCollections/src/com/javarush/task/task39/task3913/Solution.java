@@ -6,9 +6,19 @@ import java.util.Date;
 public class Solution {
     public static void main(String[] args) {
         LogParser logParser = new LogParser(Paths.get("d:/logs/"));
-        System.out.println(logParser.getNumberOfUniqueIPs(null, null));
-        System.out.println(logParser.getIPsForUser("Dima Dmitrievich Morozko", null, null));
-        System.out.println(logParser.getIPsForStatus(Status.ERROR, null, new Date()));
-        System.out.println(logParser.getIPsForEvent(Event.DONE_TASK, null, null));
+
+        //IPQUeryTest
+//        System.out.println(logParser.getNumberOfUniqueIPs(null, null));
+//        System.out.println(logParser.getIPsForUser("Dima Dmitrievich Morozko", null, null));
+//        System.out.println(logParser.getIPsForStatus(Status.ERROR, null, new Date()));
+//        System.out.println(logParser.getIPsForEvent(Event.DONE_TASK, null, null));
+
+        //UserQueryTest
+//        System.out.println(logParser.getAllUsers());
+//        System.out.println(logParser.getNumberOfUsers(null, null));
+//        System.out.println(logParser.getNumberOfUserEvents("Dima Dmitrievich Morozko", null, null));
+//        System.out.println(logParser.getUsersForIP("146.34.15.5", null, null));
+//        System.out.println(logParser.getLoggedUsers(null, null));
+//        System.out.println(logParser.getSolvedTaskUsers(null, null, 1));
     }
 }

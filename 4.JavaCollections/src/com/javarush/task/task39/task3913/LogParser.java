@@ -1,7 +1,9 @@
 package com.javarush.task.task39.task3913;
 
 import com.javarush.task.task39.task3913.query.IPQuery;
+import com.javarush.task.task39.task3913.query.UserQuery;
 
+import javax.swing.tree.ExpandVetoException;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -12,7 +14,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
-public class LogParser implements IPQuery {
+public class LogParser implements IPQuery, UserQuery {
 
 	private Path logDir;
 	private List<String> allLogLines;
@@ -28,7 +30,7 @@ public class LogParser implements IPQuery {
 		String match = null;
 		Matcher m = Pattern.compile(
 				"(?<ip>[\\d]+.[\\d]+.[\\d]+.[\\d]+)\\s" +
-				"(?<name>[a-zA-Z ]+)\\s" +
+				"(?<user>[a-zA-Z ]+)\\s" +
 				"(?<date>[\\d]+.[\\d]+.[\\d]+ [\\d]+:[\\d]+:[\\d]+)\\s" +
 				"(?<event>[\\w]+)\\s?(" +
 				"(?<taskNumber>[\\d]+)|)\\s" +
@@ -57,19 +59,6 @@ public class LogParser implements IPQuery {
 		return logLines;
 	}
 
-	private List<String> getLogLinesByDate(Date after, Date before) {
-		List<String> logLines = new ArrayList<>();
-
-		for (String logLine : allLogLines) {
-			Date date = getDateFromLogLine(logLine);
-
-			if ((after == null || !date.before(after)) && (before == null || !date.after(before))) {
-				logLines.add(logLine);
-			}
-		}
-		return logLines;
-	}
-
 	private Date getDateFromLogLine(String logLine) {
 		String dateString = getMatch(logLine, "date");
 		Date date = null;
@@ -88,7 +77,20 @@ public class LogParser implements IPQuery {
 	}
 
 	private String getUserFromLogLine(String logLine) {
-		return getMatch(logLine, "name");
+		return getMatch(logLine, "user");
+	}
+
+	private List<String> getLogLinesByDate(Date after, Date before) {
+		List<String> logLines = new ArrayList<>();
+
+		for (String logLine : allLogLines) {
+			Date date = getDateFromLogLine(logLine);
+
+			if ((after == null || !date.before(after)) && (before == null || !date.after(before))) {
+				logLines.add(logLine);
+			}
+		}
+		return logLines;
 	}
 
 	private Event getEventFromLogLine(String logLine) {
@@ -142,6 +144,15 @@ public class LogParser implements IPQuery {
 		return status;
 	}
 
+	private boolean checkEvent(String logLine, Event event) {
+		return event.equals(getEventFromLogLine(logLine));
+	}
+
+	private boolean checkEventAndStatus(String logLine, Event event, Status status) {
+		return event.equals(getEventFromLogLine(logLine)) && status.equals(getStatusFromLogLine(logLine));
+	}
+
+	/** IPQuery Interface */
 	@Override
 	public int getNumberOfUniqueIPs(Date after, Date before) {
 		return getUniqueIPs(after, before).size();
@@ -190,6 +201,142 @@ public class LogParser implements IPQuery {
 				ips.add(getIPFromLogLine(logLine));
 			}
 		}
+
 		return ips;
+	}
+
+	/** UserQuery Interface */
+	@Override
+	public Set<String> getAllUsers() {
+		Set<String> allUniqueUsers = new HashSet<>();
+		String user;
+
+		for (String logLine : getAllLogLines()) {
+			user = getMatch(logLine, "user");
+			allUniqueUsers.add(user);
+		}
+		return allUniqueUsers;
+	}
+
+	@Override
+	public int getNumberOfUsers(Date after, Date before) {
+		Set<String> allUniqueUsers = new HashSet<>();
+
+		for (String logLine : getLogLinesByDate(after, before)) {
+			allUniqueUsers.add(getUserFromLogLine(logLine));
+		}
+		return allUniqueUsers.size();
+	}
+
+	@Override
+	public int getNumberOfUserEvents(String user, Date after, Date before) {
+		Set<Event> allUserEvents = new HashSet<>();
+
+		for (String logLine : getLogLinesByDate(after, before)) {
+			if (user.equals(getUserFromLogLine(logLine))) {
+				allUserEvents.add(getEventFromLogLine(logLine));
+			}
+		}
+		return allUserEvents.size();
+	}
+
+	@Override
+	public Set<String> getUsersForIP(String ip, Date after, Date before) {
+		Set<String> usersByIP = new HashSet<>();
+
+		for (String logLine : getLogLinesByDate(after, before)) {
+			if (ip.equals(getIPFromLogLine(logLine))) {
+				usersByIP.add(getUserFromLogLine(logLine));
+			}
+		}
+		return usersByIP;
+	}
+
+	@Override
+	public Set<String> getLoggedUsers(Date after, Date before) {
+		Set<String> loggedUsers = new HashSet<>();
+
+		for (String logLine : getLogLinesByDate(after, before)) {
+			if (checkEvent(logLine, Event.LOGIN)) {
+				loggedUsers.add(getUserFromLogLine(logLine));
+			}
+		}
+		return loggedUsers;
+	}
+
+	@Override
+	public Set<String> getDownloadedPluginUsers(Date after, Date before) {
+		Set<String> downloadPluginUsers = new HashSet<>();
+
+		for (String logLine : getLogLinesByDate(after, before)) {
+			if (checkEventAndStatus(logLine, Event.DOWNLOAD_PLUGIN, Status.OK)) {
+				downloadPluginUsers.add(getUserFromLogLine(logLine));
+			}
+		}
+		return downloadPluginUsers;
+	}
+
+	@Override
+	public Set<String> getWroteMessageUsers(Date after, Date before) {
+		Set<String> wroteMessageUsers = new HashSet<>();
+
+		for (String logLine : getLogLinesByDate(after, before)) {
+			if (checkEventAndStatus(logLine, Event.WRITE_MESSAGE, Status.OK)) {
+				wroteMessageUsers.add(getUserFromLogLine(logLine));
+			}
+		}
+		return wroteMessageUsers;
+	}
+
+	@Override
+	public Set<String> getSolvedTaskUsers(Date after, Date before) {
+		Set<String> solvedTaskUsers = new HashSet<>();
+
+		for (String logLine : getLogLinesByDate(after, before)) {
+			if (checkEvent(logLine, Event.SOLVE_TASK)) {
+				solvedTaskUsers.add(getUserFromLogLine(logLine));
+			}
+		}
+		return solvedTaskUsers;
+	}
+
+	@Override
+	public Set<String> getSolvedTaskUsers(Date after, Date before, int task) {
+		Set<String> solvedTaskUsers = new HashSet<>();
+
+		for (String logLine : getLogLinesByDate(after, before)) {
+			if (checkEvent(logLine, Event.SOLVE_TASK)
+					&& (getMatch(logLine, "taskNumber")
+					.equals(String.valueOf(task)))) {
+				solvedTaskUsers.add(getUserFromLogLine(logLine));
+			}
+		}
+		return solvedTaskUsers;
+	}
+
+	@Override
+	public Set<String> getDoneTaskUsers(Date after, Date before) {
+		Set<String> doneTaskUsers = new HashSet<>();
+
+		for (String logLine : getLogLinesByDate(after, before)) {
+			if (checkEvent(logLine, Event.DONE_TASK)) {
+				doneTaskUsers.add(getUserFromLogLine(logLine));
+			}
+		}
+		return doneTaskUsers;
+	}
+
+	@Override
+	public Set<String> getDoneTaskUsers(Date after, Date before, int task) {
+		Set<String> doneTaskUsers = new HashSet<>();
+
+		for (String logLine : getLogLinesByDate(after, before)) {
+			if (checkEvent(logLine, Event.DONE_TASK)
+					&& getMatch(logLine, "taskNumber")
+					.equals(String.valueOf(task))) {
+				doneTaskUsers.add(getUserFromLogLine(logLine));
+			}
+		}
+		return doneTaskUsers;
 	}
 }
