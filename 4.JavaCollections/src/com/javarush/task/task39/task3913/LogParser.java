@@ -68,8 +68,8 @@ public class LogParser implements IPQuery {
 		return date;
 	}
 
-	private String getIPFromLogLine(String longLine) {
-		return longLine.substring(0, longLine.indexOf(" ")).trim();
+	private String getIPFromLogLine(String logLine) {
+		return logLine.substring(0, logLine.indexOf(" ")).trim();
 	}
 
 	private String getUserFromLogLine(String logLine) {
