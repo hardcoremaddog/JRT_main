@@ -9,6 +9,6 @@ public class Solution {
         System.out.println(logParser.getNumberOfUniqueIPs(null, null));
         System.out.println(logParser.getIPsForUser("Dima Dmitrievich Morozko", null, null));
         System.out.println(logParser.getIPsForStatus(Status.ERROR, null, new Date()));
-        System.out.println(logParser.getIPsForEvent(Event.DOWNLOAD_PLUGIN, null, null));
+        System.out.println(logParser.getIPsForEvent(Event.DONE_TASK, null, null));
     }
 }

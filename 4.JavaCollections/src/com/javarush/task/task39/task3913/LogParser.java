@@ -18,20 +18,24 @@ public class LogParser implements IPQuery {
 	private List<String> allLogLines;
 
 	private SimpleDateFormat formatter = new SimpleDateFormat("dd.MM.yyyy HH:mm:ss");
-	private final String DATE_REGEXP = "((\\d+){2}['.']?[' ']?){3}(\\d+[':']?[' ']?){3}";
-	private final String USER_REGEXP = "([a-zA-Z]+[' ']){3}";
-	private final String EVENT_REGEXP = "([A-Z]+['_']([A-Z]+))|([A-Z]+[' '])";
 
 	public LogParser(Path logDir) {
 		this.logDir = logDir;
 		this.allLogLines = getAllLogLines();
 	}
 
-	private String getMatch(String logLine, String regex) {
+	private String getMatch(String logLine, String groupName) {
 		String match = null;
-		Matcher m = Pattern.compile("(?=(" + regex + "))").matcher(logLine);
+		Matcher m = Pattern.compile(
+				"(?<ip>[\\d]+.[\\d]+.[\\d]+.[\\d]+)\\s" +
+				"(?<name>[a-zA-Z ]+)\\s" +
+				"(?<date>[\\d]+.[\\d]+.[\\d]+ [\\d]+:[\\d]+:[\\d]+)\\s" +
+				"(?<event>[\\w]+)\\s?(" +
+				"(?<taskNumber>[\\d]+)|)\\s" +
+				"(?<status>[\\w]+)")
+				.matcher(logLine);
 		if (m.find()) {
-			match = m.group(1);
+			match = m.group(groupName);
 		}
 		return match;
 	}
@@ -53,29 +57,6 @@ public class LogParser implements IPQuery {
 		return logLines;
 	}
 
-	private Date getDateFromLogLine(String logLine) {
-		Date date = null;
-
-		String dateString;
-		dateString = getMatch(logLine, DATE_REGEXP);
-
-		try {
-			date = formatter.parse(dateString);
-		} catch (ParseException e) {
-			e.printStackTrace();
-		}
-
-		return date;
-	}
-
-	private String getIPFromLogLine(String logLine) {
-		return logLine.substring(0, logLine.indexOf(" ")).trim();
-	}
-
-	private String getUserFromLogLine(String logLine) {
-		return getMatch(logLine, USER_REGEXP).trim();
-	}
-
 	private List<String> getLogLinesByDate(Date after, Date before) {
 		List<String> logLines = new ArrayList<>();
 
@@ -89,8 +70,29 @@ public class LogParser implements IPQuery {
 		return logLines;
 	}
 
+	private Date getDateFromLogLine(String logLine) {
+		String dateString = getMatch(logLine, "date");
+		Date date = null;
+
+		try {
+			date = formatter.parse(dateString);
+		} catch (ParseException e) {
+			e.printStackTrace();
+		}
+
+		return date;
+	}
+
+	private String getIPFromLogLine(String logLine) {
+		return getMatch(logLine, "ip");
+	}
+
+	private String getUserFromLogLine(String logLine) {
+		return getMatch(logLine, "name");
+	}
+
 	private Event getEventFromLogLine(String logLine) {
-		String stringEvent = getMatch(logLine, EVENT_REGEXP).trim();
+		String stringEvent = getMatch(logLine, "event");
 		Event event = null;
 
 		switch (stringEvent) {
@@ -111,7 +113,7 @@ public class LogParser implements IPQuery {
 				break;
 			}
 			case "DONE_TASK" : {
-				event = Event.SOLVE_TASK;
+				event = Event.DONE_TASK;
 				break;
 			}
 		}
@@ -120,7 +122,7 @@ public class LogParser implements IPQuery {
 	}
 
 	private Status getStatusFromLogLine(String logLine) {
-		String stringStatus = logLine.substring(logLine.lastIndexOf(" ")).trim();
+		String stringStatus = getMatch(logLine, "status");
 		Status status = null;
 
 		switch (stringStatus) {
@@ -188,7 +190,6 @@ public class LogParser implements IPQuery {
 				ips.add(getIPFromLogLine(logLine));
 			}
 		}
-
 		return ips;
 	}
 }
