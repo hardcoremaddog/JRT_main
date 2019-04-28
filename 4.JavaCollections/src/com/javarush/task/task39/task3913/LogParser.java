@@ -16,8 +16,8 @@ public class LogParser implements IPQuery {
 
 	private Path logDir;
 	private List<String> allLogLines;
-	private SimpleDateFormat formatter = new SimpleDateFormat("dd.MM.yyyy HH:mm:ss");
 
+	private SimpleDateFormat formatter = new SimpleDateFormat("dd.MM.yyyy HH:mm:ss");
 	private final String DATE_REGEXP = "((\\d+){2}['.']?[' ']?){3}(\\d+[':']?[' ']?){3}";
 	private final String USER_REGEXP = "([a-zA-Z]+[' ']){3}";
 	private final String EVENT_REGEXP = "([A-Z]+['_']([A-Z]+))|([A-Z]+[' '])";
@@ -69,7 +69,7 @@ public class LogParser implements IPQuery {
 	}
 
 	private String getIPFromLogLine(String longLine) {
-		return longLine.substring(0, longLine.indexOf(" "));
+		return longLine.substring(0, longLine.indexOf(" ")).trim();
 	}
 
 	private String getUserFromLogLine(String logLine) {
@@ -82,16 +82,8 @@ public class LogParser implements IPQuery {
 		for (String logLine : allLogLines) {
 			Date date = getDateFromLogLine(logLine);
 
-			if (after == null && before == null) {
+			if ((after == null || !date.before(after)) && (before == null || !date.after(before))) {
 				logLines.add(logLine);
-			} else if (after == null) {
-				if (date.compareTo(before) < 0 || date.compareTo(before) == 0) {
-					logLines.add(logLine);
-				}
-			} else if (before == null) {
-				if (date.compareTo(after) > 0 || (date.compareTo(after) == 0)) {
-					logLines.add(logLine);
-				}
 			}
 		}
 		return logLines;
@@ -120,6 +112,7 @@ public class LogParser implements IPQuery {
 			}
 			case "DONE_TASK" : {
 				event = Event.SOLVE_TASK;
+				break;
 			}
 		}
 
@@ -195,6 +188,7 @@ public class LogParser implements IPQuery {
 				ips.add(getIPFromLogLine(logLine));
 			}
 		}
+
 		return ips;
 	}
 }
