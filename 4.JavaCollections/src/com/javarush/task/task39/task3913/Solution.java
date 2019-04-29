@@ -30,5 +30,9 @@ public class Solution {
 //        System.out.println(logParser.getDatesWhenUserWroteMessage("Peduard Petrovich Morozko",null, null));
 
 
+        //QLQueryTest
+        for (Object o : logParser.execute("get status")) {
+            System.out.println(o.toString());
+        }
     }
 }

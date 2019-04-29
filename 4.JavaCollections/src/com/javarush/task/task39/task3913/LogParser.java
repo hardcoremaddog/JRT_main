@@ -1,9 +1,6 @@
 package com.javarush.task.task39.task3913;
 
-import com.javarush.task.task39.task3913.query.DateQuery;
-import com.javarush.task.task39.task3913.query.EventQuery;
-import com.javarush.task.task39.task3913.query.IPQuery;
-import com.javarush.task.task39.task3913.query.UserQuery;
+import com.javarush.task.task39.task3913.query.*;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -11,11 +8,12 @@ import java.nio.file.Path;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
+import java.util.function.Function;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
-public class LogParser implements IPQuery, UserQuery, DateQuery, EventQuery {
+public class LogParser implements IPQuery, UserQuery, DateQuery, EventQuery, QLQuery {
 
 	private Path logDir;
 	private List<String> allLogLines;
@@ -570,5 +568,41 @@ public class LogParser implements IPQuery, UserQuery, DateQuery, EventQuery {
 		return getLogLinesByDate(after, before)
 				.stream().filter(logLine -> getEventFromLogLine(logLine).equals(Event.DONE_TASK))
 				.collect(Collectors.toMap(logLine -> Integer.valueOf(getMatch(logLine, "taskNumber")), logLine -> 1, Integer::sum));
+	}
+
+	/**QLQuery Interface*/
+	@Override
+	public Set<Object> execute(String query) {
+		Set<Object> returnData = null;
+
+		switch (query) {
+			case "get ip" : {
+				returnData = new HashSet<>(getUniqueIPs(null, null));
+				break;
+			}
+			case "get user" : {
+				returnData = new HashSet<>(getAllUsers());
+				break;
+			}
+			case "get date" : {
+				returnData = new HashSet<>();
+				for (String logLine : getAllLogLines()) {
+					returnData.add(getDateFromLogLine(logLine));
+				}
+				break;
+			}
+			case "get event" : {
+				returnData = new HashSet<>(getAllEvents(null, null));
+				break;
+			}
+			case "get status" : {
+				returnData = new HashSet<>();
+				for (String logLine : getAllLogLines()) {
+					returnData.add(getStatusFromLogLine(logLine));
+				}
+				break;
+			}
+		}
+		return returnData;
 	}
 }
