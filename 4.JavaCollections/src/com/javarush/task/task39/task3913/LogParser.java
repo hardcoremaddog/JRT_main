@@ -1,9 +1,9 @@
 package com.javarush.task.task39.task3913;
 
+import com.javarush.task.task39.task3913.query.DateQuery;
 import com.javarush.task.task39.task3913.query.IPQuery;
 import com.javarush.task.task39.task3913.query.UserQuery;
 
-import javax.swing.tree.ExpandVetoException;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -14,7 +14,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
-public class LogParser implements IPQuery, UserQuery {
+public class LogParser implements IPQuery, UserQuery, DateQuery {
 
 	private Path logDir;
 	private List<String> allLogLines;
@@ -148,11 +148,11 @@ public class LogParser implements IPQuery, UserQuery {
 		return event.equals(getEventFromLogLine(logLine));
 	}
 
-	private boolean checkEventAndStatus(String logLine, Event event, Status status) {
-		return event.equals(getEventFromLogLine(logLine)) && status.equals(getStatusFromLogLine(logLine));
+	private boolean checkEventAndStatus(String logLine, Event event) {
+		return event.equals(getEventFromLogLine(logLine)) && Status.OK.equals(getStatusFromLogLine(logLine));
 	}
 
-	/** IPQuery Interface */
+	/** IPQuery Interface*/
 	@Override
 	public int getNumberOfUniqueIPs(Date after, Date before) {
 		return getUniqueIPs(after, before).size();
@@ -205,7 +205,7 @@ public class LogParser implements IPQuery, UserQuery {
 		return ips;
 	}
 
-	/** UserQuery Interface */
+	/** UserQuery Interface*/
 	@Override
 	public Set<String> getAllUsers() {
 		Set<String> allUniqueUsers = new HashSet<>();
@@ -269,7 +269,7 @@ public class LogParser implements IPQuery, UserQuery {
 		Set<String> downloadPluginUsers = new HashSet<>();
 
 		for (String logLine : getLogLinesByDate(after, before)) {
-			if (checkEventAndStatus(logLine, Event.DOWNLOAD_PLUGIN, Status.OK)) {
+			if (checkEventAndStatus(logLine, Event.DOWNLOAD_PLUGIN)) {
 				downloadPluginUsers.add(getUserFromLogLine(logLine));
 			}
 		}
@@ -281,7 +281,7 @@ public class LogParser implements IPQuery, UserQuery {
 		Set<String> wroteMessageUsers = new HashSet<>();
 
 		for (String logLine : getLogLinesByDate(after, before)) {
-			if (checkEventAndStatus(logLine, Event.WRITE_MESSAGE, Status.OK)) {
+			if (checkEventAndStatus(logLine, Event.WRITE_MESSAGE)) {
 				wroteMessageUsers.add(getUserFromLogLine(logLine));
 			}
 		}
@@ -338,5 +338,132 @@ public class LogParser implements IPQuery, UserQuery {
 			}
 		}
 		return doneTaskUsers;
+	}
+
+	/**DateQuery Interface*/
+	@Override
+	public Set<Date> getDatesForUserAndEvent(String user, Event event, Date after, Date before) {
+		Set<Date> datesForUserAndEvent = new HashSet<>();
+
+		for (String logLine : getLogLinesByDate(after, before)) {
+			if (user.equals(getUserFromLogLine(logLine))) {
+				if (event.equals(getEventFromLogLine(logLine))) {
+					datesForUserAndEvent.add(getDateFromLogLine(logLine));
+				}
+			}
+		}
+		return datesForUserAndEvent;
+	}
+
+	@Override
+	public Set<Date> getDatesWhenSomethingFailed(Date after, Date before) {
+		Set<Date> datesWhenSomethingFailed = new HashSet<>();
+
+		for (String logLine : getLogLinesByDate(after, before)) {
+			if (getStatusFromLogLine(logLine).equals(Status.FAILED)) {
+				datesWhenSomethingFailed.add(getDateFromLogLine(logLine));
+			}
+		}
+		return datesWhenSomethingFailed;
+	}
+
+	@Override
+	public Set<Date> getDatesWhenErrorHappened(Date after, Date before) {
+		Set<Date> datesWhenErrorHappened = new HashSet<>();
+
+		for (String logLine : getLogLinesByDate(after, before)) {
+			if (getStatusFromLogLine(logLine).equals(Status.ERROR)) {
+				datesWhenErrorHappened.add(getDateFromLogLine(logLine));
+			}
+		}
+		return datesWhenErrorHappened;
+	}
+
+	@Override
+	public Date getDateWhenUserLoggedFirstTime(String user, Date after, Date before) {
+		List<Date> datesWhenUserLogged = new ArrayList<>();
+		Date dateWhenUserLoggedFirstTime;
+
+		for (String logLine : getLogLinesByDate(after, before)) {
+			if (user.equals(getUserFromLogLine(logLine))
+					&& checkEventAndStatus(logLine, Event.LOGIN)) {
+				datesWhenUserLogged.add(getDateFromLogLine(logLine));
+			}
+		}
+		Collections.sort(datesWhenUserLogged);
+		try {
+			dateWhenUserLoggedFirstTime = datesWhenUserLogged.get(0);
+		} catch (IndexOutOfBoundsException e) {
+			return null;
+		}
+		return dateWhenUserLoggedFirstTime;
+	}
+
+	@Override
+	public Date getDateWhenUserSolvedTask(String user, int task, Date after, Date before) {
+		List<Date> datesWhenUserSolvedTask = new ArrayList<>();
+		Date dateWhenUserSolvedTaskFirstTime;
+
+		for (String logLine : getLogLinesByDate(after, before)) {
+			if (user.equals(getUserFromLogLine(logLine))
+					&& checkEvent(logLine, Event.SOLVE_TASK)
+					&& getMatch(logLine, "taskNumber").equals(String.valueOf(task))) {
+				datesWhenUserSolvedTask.add(getDateFromLogLine(logLine));
+			}
+		}
+		Collections.sort(datesWhenUserSolvedTask);
+		try {
+			dateWhenUserSolvedTaskFirstTime = datesWhenUserSolvedTask.get(0);
+		} catch (IndexOutOfBoundsException e) {
+			return null;
+		}
+		return dateWhenUserSolvedTaskFirstTime;
+	}
+
+	@Override
+	public Date getDateWhenUserDoneTask(String user, int task, Date after, Date before) {
+		List<Date> datesWhenUserDoneTask = new ArrayList<>();
+		Date dateWhenUserDoneTask;
+
+		for (String logLine : getLogLinesByDate(after, before)) {
+			if (user.equals(getUserFromLogLine(logLine))
+					&& checkEvent(logLine, Event.DONE_TASK)
+					&& getMatch(logLine, "taskNumber").equals(String.valueOf(task))) {
+				datesWhenUserDoneTask.add(getDateFromLogLine(logLine));
+			}
+		}
+		Collections.sort(datesWhenUserDoneTask);
+		try {
+			dateWhenUserDoneTask = datesWhenUserDoneTask.get(0);
+		} catch (IndexOutOfBoundsException e) {
+			return null;
+		}
+		return dateWhenUserDoneTask;
+	}
+
+	@Override
+	public Set<Date> getDatesWhenUserWroteMessage(String user, Date after, Date before) {
+		Set<Date> datesWhenUserWroteMessage = new HashSet<>();
+
+		for (String logLine : getLogLinesByDate(after, before)) {
+			if (user.equals(getUserFromLogLine(logLine))
+					&& checkEvent(logLine, Event.WRITE_MESSAGE)) {
+				datesWhenUserWroteMessage.add(getDateFromLogLine(logLine));
+			}
+		}
+		return datesWhenUserWroteMessage;
+	}
+
+	@Override
+	public Set<Date> getDatesWhenUserDownloadedPlugin(String user, Date after, Date before) {
+		Set<Date> datesWhenUserDownloadedPlugin = new HashSet<>();
+
+		for (String logLine : getLogLinesByDate(after, before)) {
+			if (user.equals(getUserFromLogLine(logLine))
+					&& checkEvent(logLine, Event.DOWNLOAD_PLUGIN)) {
+				datesWhenUserDownloadedPlugin.add(getDateFromLogLine(logLine));
+			}
+		}
+		return datesWhenUserDownloadedPlugin;
 	}
 }
