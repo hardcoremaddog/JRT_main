@@ -1,6 +1,7 @@
 package com.javarush.task.task39.task3913;
 
 import com.javarush.task.task39.task3913.query.DateQuery;
+import com.javarush.task.task39.task3913.query.EventQuery;
 import com.javarush.task.task39.task3913.query.IPQuery;
 import com.javarush.task.task39.task3913.query.UserQuery;
 
@@ -10,11 +11,12 @@ import java.nio.file.Path;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
+import java.util.function.Function;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
-public class LogParser implements IPQuery, UserQuery, DateQuery {
+public class LogParser implements IPQuery, UserQuery, DateQuery, EventQuery {
 
 	private Path logDir;
 	private List<String> allLogLines;
@@ -212,7 +214,7 @@ public class LogParser implements IPQuery, UserQuery, DateQuery {
 		String user;
 
 		for (String logLine : getAllLogLines()) {
-			user = getMatch(logLine, "user");
+			user = getUserFromLogLine(logLine);
 			allUniqueUsers.add(user);
 		}
 		return allUniqueUsers;
@@ -465,5 +467,109 @@ public class LogParser implements IPQuery, UserQuery, DateQuery {
 			}
 		}
 		return datesWhenUserDownloadedPlugin;
+	}
+
+	/**EventQuery Interface*/
+	@Override
+	public int getNumberOfAllEvents(Date after, Date before) {
+		return getAllEvents(after, before).size();
+	}
+
+	@Override
+	public Set<Event> getAllEvents(Date after, Date before) {
+		Set<Event> allEvents = new HashSet<>();
+
+		for (String logLine : getLogLinesByDate(after, before)) {
+			allEvents.add(getEventFromLogLine(logLine));
+		}
+		return allEvents;
+	}
+
+	@Override
+	public Set<Event> getEventsForIP(String ip, Date after, Date before) {
+		Set<Event> eventsForIP = new HashSet<>();
+
+		for (String logLine : getLogLinesByDate(after, before)) {
+			if (ip.equals(getIPFromLogLine(logLine))) {
+				eventsForIP.add(getEventFromLogLine(logLine));
+			}
+		}
+		return eventsForIP;
+	}
+
+	@Override
+	public Set<Event> getEventsForUser(String user, Date after, Date before) {
+		Set<Event> eventsForUser = new HashSet<>();
+
+		for (String logLine : getLogLinesByDate(after, before)) {
+			if (user.equals(getUserFromLogLine(logLine))) {
+				eventsForUser.add(getEventFromLogLine(logLine));
+			}
+		}
+		return eventsForUser;
+	}
+
+	@Override
+	public Set<Event> getFailedEvents(Date after, Date before) {
+		Set<Event> failedEvents = new HashSet<>();
+
+		for (String logLine : getLogLinesByDate(after, before)) {
+			if (getStatusFromLogLine(logLine).equals(Status.FAILED)) {
+				failedEvents.add(getEventFromLogLine(logLine));
+			}
+		}
+		return failedEvents;
+	}
+
+	@Override
+	public Set<Event> getErrorEvents(Date after, Date before) {
+		Set<Event> errorEvents = new HashSet<>();
+
+		for (String logLine : getLogLinesByDate(after, before)) {
+			if (getStatusFromLogLine(logLine).equals(Status.ERROR)) {
+				errorEvents.add(getEventFromLogLine(logLine));
+			}
+		}
+		return errorEvents;
+	}
+
+	@Override
+	public int getNumberOfAttemptToSolveTask(int task, Date after, Date before) {
+		List<Event> solveTaskEvents = new ArrayList<>();
+
+		for (String logLine : getLogLinesByDate(after, before)) {
+			if (checkEvent(logLine, Event.SOLVE_TASK)
+					&& getMatch(logLine, "taskNumber").equals(String.valueOf(task))) {
+				solveTaskEvents.add(getEventFromLogLine(logLine));
+			}
+		}
+		return solveTaskEvents.size();
+	}
+
+	@Override
+	public int getNumberOfSuccessfulAttemptToSolveTask(int task, Date after, Date before) {
+		List<Event> successfulSolveTaskEvents = new ArrayList<>();
+
+		for (String logLine : getLogLinesByDate(after, before)) {
+			if (checkEvent(logLine, Event.DONE_TASK)
+					&& getMatch(logLine, "taskNumber").equals(String.valueOf(task))) {
+				successfulSolveTaskEvents.add(getEventFromLogLine(logLine));
+			}
+		}
+		return successfulSolveTaskEvents.size();
+	}
+
+	@Override
+	public Map<Integer, Integer> getAllSolvedTasksAndTheirNumber(Date after, Date before) {
+		return getLogLinesByDate(after, before)
+				.stream().filter(logLine -> getEventFromLogLine(logLine).equals(Event.SOLVE_TASK))
+				.collect(Collectors.toMap(logLine -> Integer.valueOf(getMatch(logLine, "taskNumber")), logLine -> 1, Integer::sum));
+	}
+
+	@Override
+	public Map<Integer, Integer> getAllDoneTasksAndTheirNumber(Date after, Date before) {
+		return getLogLinesByDate(after, before)
+				.stream().filter(logLine -> getEventFromLogLine(logLine).equals(Event.DONE_TASK))
+				.collect(Collectors.toMap(logLine -> Integer.valueOf(getMatch(logLine, "taskNumber")), logLine -> 1, Integer::sum));
 	}
 }
