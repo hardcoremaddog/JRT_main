@@ -8,7 +8,6 @@ import java.nio.file.Path;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
-import java.util.function.Function;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
@@ -44,7 +43,7 @@ public class LogParser implements IPQuery, UserQuery, DateQuery, EventQuery, QLQ
 	private String getQLMatch(String query, String groupName) {
 		String match = null;
 		Matcher m = Pattern.compile(
-				"get (?<field1>\\w+) for (?<field2>\\w+) = \"(?<value1>.*?)\"")
+				"get (?<field1>\\w+) for (?<field2>\\w+) = \"(?<value1>.*?)\"( and date between \"(?<after>.*?)\" and \"(?<before>.*?)\")?")
 				.matcher(query);
 		if (m.find()) {
 			match = m.group(groupName);
@@ -584,17 +583,17 @@ public class LogParser implements IPQuery, UserQuery, DateQuery, EventQuery, QLQ
 	/**QLQuery Interface*/
 	@Override
 	public Set<Object> execute(String query) {
-/**		Общий формат запроса с параметром:
+/**		РћР±С‰РёР№ С„РѕСЂРјР°С‚ Р·Р°РїСЂРѕСЃР° СЃ РїР°СЂР°РјРµС‚СЂРѕРј:
 		get field1 for field2 = "value1"
-		Где: field1 - одно из полей: ip, user, date, event или status;
-		field2 - одно из полей: ip, user, date, event или status;
-		value1 - значение поля field2.
+		Р“РґРµ: field1 - РѕРґРЅРѕ РёР· РїРѕР»РµР№: ip, user, date, event РёР»Рё status;
+		field2 - РѕРґРЅРѕ РёР· РїРѕР»РµР№: ip, user, date, event РёР»Рё status;
+		value1 - Р·РЅР°С‡РµРЅРёРµ РїРѕР»СЏ field2.
 
-		Алгоритм обработки запроса следующий:
-		просматриваем записи в логе,
-		если поле field2 имеет значение value1,
-		то добавляем поле field1 в множество,
-		которое затем будет возвращено методом execute.*/
+		РђР»РіРѕСЂРёС‚Рј РѕР±СЂР°Р±РѕС‚РєРё Р·Р°РїСЂРѕСЃР° СЃР»РµРґСѓСЋС‰РёР№:
+		РїСЂРѕСЃРјР°С‚СЂРёРІР°РµРј Р·Р°РїРёСЃРё РІ Р»РѕРіРµ,
+		РµСЃР»Рё РїРѕР»Рµ field2 РёРјРµРµС‚ Р·РЅР°С‡РµРЅРёРµ value1,
+		С‚Рѕ РґРѕР±Р°РІР»СЏРµРј РїРѕР»Рµ field1 РІ РјРЅРѕР¶РµСЃС‚РІРѕ,
+		РєРѕС‚РѕСЂРѕРµ Р·Р°С‚РµРј Р±СѓРґРµС‚ РІРѕР·РІСЂР°С‰РµРЅРѕ РјРµС‚РѕРґРѕРј execute.*/
 
 		Set<Object> returnData = new HashSet<>();
 
@@ -602,9 +601,52 @@ public class LogParser implements IPQuery, UserQuery, DateQuery, EventQuery, QLQ
 		String field2 = getQLMatch(query, "field2");
 		String value1 = getQLMatch(query, "value1");
 
-		if (field1 != null && field2 != null && value1 != null) {
-			for (String logLine : getAllLogLines()) {
+		String after = getQLMatch(query, "after");
+		String before = getQLMatch(query, "before");
 
+		//Advanced query
+		if (field1 != null && field2 != null && value1 != null) {
+
+			//Advanced query with dates
+			if (after != null && before != null) {
+				try {
+					Date dateAfter = formatter.parse(after);
+					Date dateBefore = formatter.parse(before);
+
+					for (String logLine : getLogLinesByDate(dateAfter, dateBefore)) {
+						Date logDate = getDateFromLogLine(logLine);
+						if (logDate.after(dateAfter) && logDate.before(dateBefore)) {
+							if (getMatch(logLine, field2).equals(value1)) {
+								switch (field1) {
+									case "date": {
+										returnData.add(getDateFromLogLine(logLine));
+										break;
+									}
+									case "event": {
+										returnData.add(getEventFromLogLine(logLine));
+										break;
+									}
+									case "status": {
+										returnData.add(getStatusFromLogLine(logLine));
+										break;
+									}
+									default: {
+										returnData.add(getMatch(logLine, field1));
+									}
+								}
+							}
+						}
+					}
+					returnData.remove(dateAfter);
+					returnData.remove(dateBefore);
+					return returnData;
+				} catch (ParseException e) {
+					e.printStackTrace();
+				}
+			}
+
+			//else
+			for (String logLine : getAllLogLines()) {
 				if (getMatch(logLine, field2).equals(value1)) {
 					switch (field1) {
 						case "date" : {
@@ -621,13 +663,13 @@ public class LogParser implements IPQuery, UserQuery, DateQuery, EventQuery, QLQ
 						}
 						default : {
 							returnData.add(getMatch(logLine, field1));
-							break;
 						}
 					}
 				}
 			}
 		}
 
+		//Simple query
 		switch (query) {
 			case "get ip" : {
 				returnData = new HashSet<>(getUniqueIPs(null, null));
