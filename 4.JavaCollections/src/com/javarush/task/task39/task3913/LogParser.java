@@ -41,6 +41,17 @@ public class LogParser implements IPQuery, UserQuery, DateQuery, EventQuery, QLQ
 		return match;
 	}
 
+	private String getQLMatch(String query, String groupName) {
+		String match = null;
+		Matcher m = Pattern.compile(
+				"get (?<field1>\\w+) for (?<field2>\\w+) = \"(?<value1>.*?)\"")
+				.matcher(query);
+		if (m.find()) {
+			match = m.group(groupName);
+		}
+		return match;
+	}
+
 	private List<String> getAllLogLines() {
 		List<String> logLines = new ArrayList<>();
 
@@ -573,7 +584,49 @@ public class LogParser implements IPQuery, UserQuery, DateQuery, EventQuery, QLQ
 	/**QLQuery Interface*/
 	@Override
 	public Set<Object> execute(String query) {
-		Set<Object> returnData = null;
+/**		Общий формат запроса с параметром:
+		get field1 for field2 = "value1"
+		Где: field1 - одно из полей: ip, user, date, event или status;
+		field2 - одно из полей: ip, user, date, event или status;
+		value1 - значение поля field2.
+
+		Алгоритм обработки запроса следующий:
+		просматриваем записи в логе,
+		если поле field2 имеет значение value1,
+		то добавляем поле field1 в множество,
+		которое затем будет возвращено методом execute.*/
+
+		Set<Object> returnData = new HashSet<>();
+
+		String field1 = getQLMatch(query, "field1");
+		String field2 = getQLMatch(query, "field2");
+		String value1 = getQLMatch(query, "value1");
+
+		if (field1 != null && field2 != null && value1 != null) {
+			for (String logLine : getAllLogLines()) {
+
+				if (getMatch(logLine, field2).equals(value1)) {
+					switch (field1) {
+						case "date" : {
+							returnData.add(getDateFromLogLine(logLine));
+							break;
+						}
+						case "event" : {
+							returnData.add(getEventFromLogLine(logLine));
+							break;
+						}
+						case "status" : {
+							returnData.add(getStatusFromLogLine(logLine));
+							break;
+						}
+						default : {
+							returnData.add(getMatch(logLine, field1));
+							break;
+						}
+					}
+				}
+			}
+		}
 
 		switch (query) {
 			case "get ip" : {

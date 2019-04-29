@@ -29,9 +29,8 @@ public class Solution {
 //        System.out.println(logParser.getDateWhenUserDoneTask("Peduard Petrovich Morozko", 24, null, null));
 //        System.out.println(logParser.getDatesWhenUserWroteMessage("Peduard Petrovich Morozko",null, null));
 
-
         //QLQueryTest
-        for (Object o : logParser.execute("get status")) {
+        for (Object o : logParser.execute("get status for ip = \"120.120.120.122\"")) {
             System.out.println(o.toString());
         }
     }
