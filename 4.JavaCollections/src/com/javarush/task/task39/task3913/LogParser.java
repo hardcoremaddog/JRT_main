@@ -604,10 +604,8 @@ public class LogParser implements IPQuery, UserQuery, DateQuery, EventQuery, QLQ
 		String after = getQLMatch(query, "after");
 		String before = getQLMatch(query, "before");
 
-		//Advanced query
 		if (field1 != null && field2 != null && value1 != null) {
 
-			//Advanced query with dates
 			if (after != null && before != null) {
 				try {
 					Date dateAfter = formatter.parse(after);
@@ -645,7 +643,6 @@ public class LogParser implements IPQuery, UserQuery, DateQuery, EventQuery, QLQ
 				}
 			}
 
-			//else
 			for (String logLine : getAllLogLines()) {
 				if (getMatch(logLine, field2).equals(value1)) {
 					switch (field1) {
@@ -669,7 +666,6 @@ public class LogParser implements IPQuery, UserQuery, DateQuery, EventQuery, QLQ
 			}
 		}
 
-		//Simple query
 		switch (query) {
 			case "get ip" : {
 				returnData = new HashSet<>(getUniqueIPs(null, null));
