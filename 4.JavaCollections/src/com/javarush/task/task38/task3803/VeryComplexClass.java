@@ -8,7 +8,7 @@ import com.sun.org.apache.xpath.internal.operations.String;
 
 public class VeryComplexClass {
     public void methodThrowsClassCastException() {
-    	Object x = 55;
+    	Object x = 56;
     	String s = (String)x;
     }
 
