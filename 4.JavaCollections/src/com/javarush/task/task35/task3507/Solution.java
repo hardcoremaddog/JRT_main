@@ -36,7 +36,12 @@ public class Solution {
                     //if it's .class file ->
                     if (file.isFile() && file.getName().endsWith(".class")) {
 
+
+
                         String packageName = Solution.class.getPackage().getName() + ".data";
+
+                        System.out.println(file.toPath());
+                        System.out.println(packageName);
 
                         MyClassLoader loader = new MyClassLoader();
 
