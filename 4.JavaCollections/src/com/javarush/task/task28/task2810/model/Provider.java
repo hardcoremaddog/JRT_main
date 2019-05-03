@@ -16,6 +16,10 @@ public class Provider {
 	}
 
 	public List<Vacancy> getJavaVacancies(String searchString) {
+		if (searchString != null) {
+			return strategy.getVacancies(searchString);
+		}
+
 		return null;
 	}
 }

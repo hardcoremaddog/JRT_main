@@ -24,4 +24,14 @@ public class Controller {
 	}
 
 
+	public void scan() {
+		int vacanciesCount = 0;
+
+		if (providers != null) {
+			for (Provider provider : providers) {
+				vacanciesCount += provider.getJavaVacancies("Java Киев").size();
+			}
+		}
+		System.out.println(vacanciesCount);
+	}
 }
