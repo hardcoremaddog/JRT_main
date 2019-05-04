@@ -13,7 +13,7 @@ import java.util.List;
 
 public class HHStrategy implements Strategy {
 	private static final String URL_FORMAT = "http://hh.ru/search/vacancy?text=java+%s&page=%d";
-	private static final String CACHED_URL = "https://javarush.ru/testdata/big28data.html";
+//	private static final String CACHED_URL = "https://javarush.ru/testdata/big28data.html";
 	private int PAGE_VALUE = 0;
 
 	@Override
