@@ -1,6 +1,6 @@
 <!doctype html>
 <html class="desktop">
-<!--request: 1556918775968d51a88224af18de07f9-->
+<!--request: 1556972248625d992da852c3289909d9-->
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,13 +24,13 @@
             area: '2099',
             build: '19.18.2.1',
             lang: 'RU' || 'RU',
-            requestId: '1556918775968d51a88224af18de07f9',
+            requestId: '1556972248625d992da852c3289909d9',
             sentryDSN: 'https://021a400d5c554c00a0b92ac575ff4768@sentry.hh.ru/6',
             siteId: '1' || '1',
             staticHost: 'https://i.hh.ru',
             hhcdnHost: 'https://hhcdn.ru',
             apiHost: 'https://api.hh.ru',
-            timeStamp: '1556918775',
+            timeStamp: '1556972248',
             userType: '' || 'anonymous',
             cryptedUserId: '',
             employerState: '',
@@ -205,17 +205,17 @@
                     "firstName": "",
                     "lastName": "",
                     "midName": "",
-                    "link": "",
-                    "requestId": "1556918775968d51a88224af18de07f9",
+                    "link": "no-referrer-when-downgrade",
+                    "requestId": "1556972248625d992da852c3289909d9",
                     "email": "",
                     "backoffice": ""
-                }, "hash": "0cd6f708097e73a6c21f78bc64fd897a9fbd4544eab82de27357c43a6e172bc4"
+                }, "hash": "a6388eeece3786d907742abb5d94993c9baa37899e660e037babaae1d5fb9edc"
             }
         };
     </script>
     <script>
         window.globalVars = window.globalVars || {};
-        window.globalVars.bannersBatchUrl = 'https://hhcdn.ru/pv?token=1556918776.09649945356877609709&meta=hhuid%3Du8q1NdVYwITVblzMsfdJUA--&type=unknown&regions=113&specs=395,140,270,272,400,273,274,146,277,536,25,281,30,288,161,420,295,167,296,172,50,308,313,320,68,327,203,82,211,89,474,346,730,475,731,221,93,96,225,359,232,363,237,110,113,116,117,246,3,388,389,390,391,9,137,10&domainAreaId=2099';
+        window.globalVars.bannersBatchUrl = 'https://hhcdn.ru/pv?token=1556972248.75818095642486688452&meta=hhuid%3DNgiy7JKN4JCeBVzNgtoylQ--&type=unknown&regions=113&specs=395,140,270,272,400,273,274,146,277,536,25,281,30,288,161,420,295,167,296,172,50,308,313,320,68,327,203,82,211,89,474,346,730,475,731,221,93,96,225,359,232,363,237,110,113,116,117,246,3,388,389,390,391,9,137,10&domainAreaId=2099';
     </script>
     <script type="text/html" class="HHC-Banners-Place-Template"><!--
             <div class="HHC-Banners-Place HHC-Banner-%id% banner-place banner-place_%id% " data-banner-id="%id%" data-empty-class="banner-place_hide" data-loaded-class="banner-place_show" data-banner-additional-class=""></div>
@@ -501,9 +501,9 @@
 
         ga('main.set', 'dimension1', 'anonymous');
 
-        ga('main.set', 'dimension7', 'b26958d40315df807197f323b6f54be20f444668cb98d1ccb0f7d31f0ac8fcdd');
-        ga('main.set', 'dimension8', 'u8q1NdVYwITVblzMsfdJUA--');
-        ga('main.set', 'dimension12', '572');
+        ga('main.set', 'dimension7', '14205da079d07d7593d2df6aebfc83cf1bcd61b092525fb85e5a3c45682d263f');
+        ga('main.set', 'dimension8', 'Ngiy7JKN4JCeBVzNgtoylQ--');
+        ga('main.set', 'dimension12', '577');
         ga('main.set', 'dimension14', '1');
         ga('main.set', 'dimension15', 'normal');
 
@@ -1298,7 +1298,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <input type="hidden" name="_xsrf" value="ee1dd55a70fe6a1c2af65c6af417c994">
+                                            <input type="hidden" name="_xsrf" value="f546679555024d97df7a621898413025">
                                         </form>
                                     </div>
                                 </div>
@@ -1353,7 +1353,7 @@
                     <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-12 bloko-column_l-16 bloko-column_container">
                         <div class="bloko-column bloko-column_xs-4 bloko-column_s-8 bloko-column_m-12 bloko-column_l-16">
                             <div class="breadcrumbs"></div>
-                            <h1 class="header" data-qa="page-title">572&nbsp;вакансии «java %s»</h1>
+                            <h1 class="header" data-qa="page-title">577&nbsp;вакансий «java %s»</h1>
                         </div>
                         <script data-name="HH/SearchVacancyMap" data-params="
             {
@@ -1517,7 +1517,7 @@
                                 }
                             "></script>
                                                     <input type="hidden" name="_xsrf"
-                                                           value="ee1dd55a70fe6a1c2af65c6af417c994">
+                                                           value="f546679555024d97df7a621898413025">
                                                 </form>
                                             </div>
                                             <div class="g-hidden" data-message-group="saveSearch"
@@ -1632,7 +1632,7 @@
                                                                                 class="clusters-value__name"
                                                                                 data-qa="serp__cluster-item-title">Беларусь</span><span
                                                                                 class="clusters-value__count"
-                                                                                data-qa="serp__cluster-item-number">130</span></a>
+                                                                                data-qa="serp__cluster-item-number">133</span></a>
                                                                             <!--/noindex--></li>
                                                                         <li class="clusters-list__item"
                                                                             data-qa="serp__cluster-item">
@@ -1653,21 +1653,21 @@
                                                                             data-qa="serp__cluster-item">
                                                                             <!--noindex--><a rel="nofollow"
                                                                                              class="clusters-value"
-                                                                                             href="?clusters=true&amp;enable_snippets=true&amp;text=java+%25s&amp;area=1&amp;from=cluster_area"><span
+                                                                                             href="?clusters=true&amp;enable_snippets=true&amp;text=java+%25s&amp;area=1002&amp;from=cluster_area"><span
                                                                                 class="clusters-value__name"
-                                                                                data-qa="serp__cluster-item-title">Москва</span><span
+                                                                                data-qa="serp__cluster-item-title">Минск</span><span
                                                                                 class="clusters-value__count"
-                                                                                data-qa="serp__cluster-item-number">114</span></a>
+                                                                                data-qa="serp__cluster-item-number">116</span></a>
                                                                             <!--/noindex--></li>
                                                                         <li class="clusters-list__item clusters-list__item_expandable"
                                                                             data-qa="serp__cluster-item">
                                                                             <!--noindex--><a rel="nofollow"
                                                                                              class="clusters-value"
-                                                                                             href="?clusters=true&amp;enable_snippets=true&amp;text=java+%25s&amp;area=1002&amp;from=cluster_area"><span
+                                                                                             href="?clusters=true&amp;enable_snippets=true&amp;text=java+%25s&amp;area=1&amp;from=cluster_area"><span
                                                                                 class="clusters-value__name"
-                                                                                data-qa="serp__cluster-item-title">Минск</span><span
+                                                                                data-qa="serp__cluster-item-title">Москва</span><span
                                                                                 class="clusters-value__count"
-                                                                                data-qa="serp__cluster-item-number">113</span></a>
+                                                                                data-qa="serp__cluster-item-number">114</span></a>
                                                                             <!--/noindex--></li>
                                                                         <li class="clusters-list__item clusters-list__item_expandable"
                                                                             data-qa="serp__cluster-item">
@@ -1743,6 +1743,16 @@
                                                                             data-qa="serp__cluster-item">
                                                                             <!--noindex--><a rel="nofollow"
                                                                                              class="clusters-value"
+                                                                                             href="?clusters=true&amp;enable_snippets=true&amp;text=java+%25s&amp;area=40&amp;from=cluster_area"><span
+                                                                                class="clusters-value__name"
+                                                                                data-qa="serp__cluster-item-title">Казахстан</span><span
+                                                                                class="clusters-value__count"
+                                                                                data-qa="serp__cluster-item-number">11</span></a>
+                                                                            <!--/noindex--></li>
+                                                                        <li class="clusters-list__item clusters-list__item_expandable"
+                                                                            data-qa="serp__cluster-item">
+                                                                            <!--noindex--><a rel="nofollow"
+                                                                                             class="clusters-value"
                                                                                              href="?clusters=true&amp;enable_snippets=true&amp;text=java+%25s&amp;area=1530&amp;from=cluster_area"><span
                                                                                 class="clusters-value__name"
                                                                                 data-qa="serp__cluster-item-title">Ростовская область</span><span
@@ -1753,9 +1763,9 @@
                                                                             data-qa="serp__cluster-item">
                                                                             <!--noindex--><a rel="nofollow"
                                                                                              class="clusters-value"
-                                                                                             href="?clusters=true&amp;enable_snippets=true&amp;text=java+%25s&amp;area=40&amp;from=cluster_area"><span
+                                                                                             href="?clusters=true&amp;enable_snippets=true&amp;text=java+%25s&amp;area=160&amp;from=cluster_area"><span
                                                                                 class="clusters-value__name"
-                                                                                data-qa="serp__cluster-item-title">Казахстан</span><span
+                                                                                data-qa="serp__cluster-item-title">Алматы</span><span
                                                                                 class="clusters-value__count"
                                                                                 data-qa="serp__cluster-item-number">9</span></a>
                                                                             <!--/noindex--></li>
@@ -1768,16 +1778,6 @@
                                                                                 data-qa="serp__cluster-item-title">Саратовская область</span><span
                                                                                 class="clusters-value__count"
                                                                                 data-qa="serp__cluster-item-number">9</span></a>
-                                                                            <!--/noindex--></li>
-                                                                        <li class="clusters-list__item clusters-list__item_expandable"
-                                                                            data-qa="serp__cluster-item">
-                                                                            <!--noindex--><a rel="nofollow"
-                                                                                             class="clusters-value"
-                                                                                             href="?clusters=true&amp;enable_snippets=true&amp;text=java+%25s&amp;area=160&amp;from=cluster_area"><span
-                                                                                class="clusters-value__name"
-                                                                                data-qa="serp__cluster-item-title">Алматы</span><span
-                                                                                class="clusters-value__count"
-                                                                                data-qa="serp__cluster-item-number">7</span></a>
                                                                             <!--/noindex--></li>
                                                                         <li class="clusters-list__item clusters-list__item_expandable"
                                                                             data-qa="serp__cluster-item">
@@ -2363,7 +2363,7 @@
                                                                                 class="clusters-value__name"
                                                                                 data-qa="serp__cluster-item-title">IT, телеком</span><span
                                                                                 class="clusters-value__count"
-                                                                                data-qa="serp__cluster-item-number">566</span></a>
+                                                                                data-qa="serp__cluster-item-number">571</span></a>
                                                                             <!--/noindex--></li>
                                                                         <li class="clusters-list__item"
                                                                             data-qa="serp__cluster-item">
@@ -2551,7 +2551,7 @@
                                                                                 class="clusters-value__name"
                                                                                 data-qa="serp__cluster-item-title">Информационные технологии, системная интеграция, интернет</span><span
                                                                                 class="clusters-value__count"
-                                                                                data-qa="serp__cluster-item-number">464</span></a>
+                                                                                data-qa="serp__cluster-item-number">469</span></a>
                                                                             <!--/noindex--></li>
                                                                         <li class="clusters-list__item"
                                                                             data-qa="serp__cluster-item">
@@ -2799,7 +2799,7 @@
                                                                                 class="clusters-value__name"
                                                                                 data-qa="serp__cluster-item-title">От&nbsp;3&nbsp;до&nbsp;6&nbsp;лет</span><span
                                                                                 class="clusters-value__count"
-                                                                                data-qa="serp__cluster-item-number">295</span></a>
+                                                                                data-qa="serp__cluster-item-number">300</span></a>
                                                                             <!--/noindex--></li>
                                                                         <li class="clusters-list__item"
                                                                             data-qa="serp__cluster-item">
@@ -2872,7 +2872,7 @@
                                                                                 class="clusters-value__name"
                                                                                 data-qa="serp__cluster-item-title">Полная занятость</span><span
                                                                                 class="clusters-value__count"
-                                                                                data-qa="serp__cluster-item-number">568</span></a>
+                                                                                data-qa="serp__cluster-item-number">573</span></a>
                                                                             <!--/noindex--></li>
                                                                         <li class="clusters-list__item"
                                                                             data-qa="serp__cluster-item">
@@ -2935,7 +2935,7 @@
                                                                                 class="clusters-value__name"
                                                                                 data-qa="serp__cluster-item-title">Полный день</span><span
                                                                                 class="clusters-value__count"
-                                                                                data-qa="serp__cluster-item-number">452</span></a>
+                                                                                data-qa="serp__cluster-item-number">457</span></a>
                                                                             <!--/noindex--></li>
                                                                         <li class="clusters-list__item"
                                                                             data-qa="serp__cluster-item">
@@ -3018,7 +3018,7 @@
                                                                                 class="clusters-value__name"
                                                                                 data-qa="serp__cluster-item-title">Без вакансий агентств</span><span
                                                                                 class="clusters-value__count"
-                                                                                data-qa="serp__cluster-item-number">517</span></a>
+                                                                                data-qa="serp__cluster-item-number">522</span></a>
                                                                             <!--/noindex--></li>
                                                                     </ul>
                                                                 </div>
@@ -3137,10 +3137,134 @@
                                                                 <div class="resume-search-item__name">
                                                                     <a class="bloko-link HH-LinkModifier"
                                                                        data-qa="vacancy-serp__vacancy-title"
-                                                                       href="https://yubilejnyj.hh.ru/vacancy/29996297?query=java%20%25s"
+                                                                       href="https://yubilejnyj.hh.ru/vacancy/31249896?query=java%20%25s"
                                                                        data-position="0"
-                                                                       data-requestid="1556918775968d51a88224af18de07f9"
-                                                                       data-totalvacancies="572" target="_blank">Full-Stack
+                                                                       data-requestid="1556972248625d992da852c3289909d9"
+                                                                       data-totalvacancies="577" target="_blank">Senior
+                                                                        Android Developer (Java, Kotlin)</a>
+                                                                </div>
+                                                                <div class="vacancy-serp-item__meta-info">
+                                                                    <a href="/employer/2809069"
+                                                                       class="bloko-link bloko-link_secondary"
+                                                                       data-qa="vacancy-serp__vacancy-employer">ООО
+                                                                        Роксофт</a>&nbsp;
+                                                                    <a class="bloko-link" target="_blank"
+                                                                       href="https://feedback.hh.ru/article/details/id/5951"><span
+                                                                            class="bloko-icon bloko-icon_done bloko-icon_initial-action"><script
+                                                                            data-name="HH/Tooltip/Hover" data-params="
+                    {
+                        &quot;placement&quot;: &quot;right&quot;,
+                        &quot;html&quot;: &quot;Компания прошла проверку на сайте&quot;,
+                        &quot;layer&quot;: &quot;overlay&quot;
+                    }
+                "></script></span></a>
+                                                                </div>
+                                                                <div class="vacancy-serp-item__meta-info">
+                                                                    <span class="vacancy-serp-item__meta-info"
+                                                                          data-qa="vacancy-serp__vacancy-address">Минск, <span
+                                                                            class="metro-station"><span
+                                                                            class="metro-point"
+                                                                            style="color: #0521C3"></span>Институт Культуры</span></span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="vacancy-serp-item__sidebar"></div>
+                                                        </div>
+                                                        <div class="vacancy-serp-item__row">
+                                                            <div class="vacancy-serp-item__info">
+                                                                <div data-qa="vacancy-serp__vacancy_snippet_responsibility">
+                                                                    Take part in the development of a native mobile app
+                                                                    with Android. Work closely with other engineers,
+                                                                    collaborate with the...
+                                                                </div>
+                                                                <div data-qa="vacancy-serp__vacancy_snippet_requirement">
+                                                                    Strong
+                                                                    <span class="highlighted highlighted_short">Java</span>
+                                                                    development skills - 4+ years of commercial
+                                                                    development experience. Strong Android development
+                                                                    skills - 4+ years of commercial...
+                                                                </div>
+                                                            </div>
+                                                            <div class="vacancy-serp-item__sidebar">
+                                                                <a href="/employer/2809069"
+                                                                   data-qa="vacancy-serp__vacancy-employer-logo"><img
+                                                                        src="https://hhcdn.ru/employer-logo/3001220.png"
+                                                                        alt="Роксофт"
+                                                                        class="vacancy-serp-item__logo"></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="vacancy-serp-item__row vacancy-serp-item__row_controls">
+                                                            <div class="HH-VacancyResponseTrigger-Button">
+                                                                <script data-name="HH/VacancyResponsePopup/VacancyResponsePopup"
+                                                                        data-params="
+                {
+                    &quot;isAutoOpen&quot;: false,
+                    &quot;stayOnPage&quot;: true,
+                    &quot;vacancyId&quot;: &quot;31249896&quot;,
+                    &quot;employerId&quot;: &quot;2809069&quot;,
+                    &quot;isWithoutTest&quot;: true,
+                    &quot;ignoreResponseCheck&quot;: true,
+                    &quot;trl&quot;: {
+                        &quot;responseTitle&quot;: &quot;Резюме доставлено&quot;,
+                        &quot;responseStats&quot;: &quot;Этот работодатель просматривает {0}% поступивших резюме&quot;,
+                        &quot;responseNoStats&quot;: &quot;Узнать о статусе резюме можно на странице откликов&quot;,
+                        &quot;viewResponse&quot;: &quot;Посмотреть&quot;,
+                        &quot;viewResponses&quot;: &quot;Смотреть отклики&quot;
+                    }
+                }
+            "></script>
+                                                                <span class="vacancy-serp-item__controls-item"><a
+                                                                        href="/applicant/vacancy_response?vacancyId=31249896"
+                                                                        class="bloko-link bloko-link_dimmed HH-VacancyResponsePopup-Link"
+                                                                        data-qa="vacancy-serp__vacancy_response">Откликнуться</a></span>
+                                                            </div>
+                                                            <div class="vacancy-serp-item__controls-item HH-VacancyResponseTrigger-Container g-hidden">
+                                                                <a href="/negotiations/gotopic?vacancy_id="
+                                                                   target="_blank" class="search-resume-item-label"
+                                                                   data-qa="vacancy-serp__vacancy_responded">Вы
+                                                                    откликнулись</a>
+                                                            </div>
+                                                            <span class="vacancy-serp-item__controls-item"><span
+                                                                    class="bloko-link bloko-link_dimmed"
+                                                                    data-qa="vacancy-serp__vacancy_contacts"><span
+                                                                    class="vacancy-serp-item__control vacancy-serp-item__control_gt-xs">Показать контакты</span><span
+                                                                    class="vacancy-serp-item__control vacancy-serp-item__control_xs-only">Контакты</span><script
+                                                                    data-name="HH/VacancyContactsLoader/VacancyContactsLoader"
+                                                                    data-params="
+                    {
+                        &quot;id&quot;: 31249896,
+                        &quot;vacancyData&quot;: {
+                            &quot;title&quot;: &quot;Senior Android Developer (Java, Kotlin)&quot;,
+                            &quot;salaryFrom&quot;: &quot;&quot;,
+                            &quot;salaryTo&quot;: &quot;&quot;,
+                            &quot;currency&quot;: &quot;&quot;
+                        }
+                    }
+                "></script><script data-name="HH/SendAnalytics" data-params="
+                    {
+                        &quot;onEvent&quot;: &quot;click&quot;,
+                        &quot;category&quot;: &quot;view_contacts&quot;,
+                        &quot;action&quot;: &quot;profArea_push&quot;,
+                        &quot;label&quot;: 31249896
+                    }
+                "></script></span></span>
+                                                            <span class="vacancy-serp-item__controls-item vacancy-serp-item__controls-item_last"
+                                                                  data-qa="vacancy-serp__vacancy-date"><span
+                                                                    class="vacancy-serp-item__publication-date">4&nbsp;мая</span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div data-qa="vacancy-serp__vacancy vacancy-serp__vacancy_premium"
+                                                         class="vacancy-serp-item  vacancy-serp-item_premium">
+                                                        <script data-name="HH/VacancyResponseTrigger"
+                                                                data-params=""></script>
+                                                        <div class="vacancy-serp-item__row">
+                                                            <div class="vacancy-serp-item__info">
+                                                                <div class="resume-search-item__name">
+                                                                    <a class="bloko-link HH-LinkModifier"
+                                                                       data-qa="vacancy-serp__vacancy-title"
+                                                                       href="https://yubilejnyj.hh.ru/vacancy/29996297?query=java%20%25s"
+                                                                       data-position="1"
+                                                                       data-requestid="1556972248625d992da852c3289909d9"
+                                                                       data-totalvacancies="577" target="_blank">Full-Stack
                                                                         Developer (Java)</a>
                                                                 </div>
                                                                 <div class="vacancy-serp-item__meta-info">
@@ -3259,10 +3383,407 @@
                                                                 <div class="resume-search-item__name">
                                                                     <a class="bloko-link HH-LinkModifier"
                                                                        data-qa="vacancy-serp__vacancy-title"
+                                                                       href="https://yubilejnyj.hh.ru/vacancy/30637568?query=java%20%25s"
+                                                                       data-position="2"
+                                                                       data-requestid="1556972248625d992da852c3289909d9"
+                                                                       data-totalvacancies="577" target="_blank">Java/Kotlin
+                                                                        Developer</a>
+                                                                </div>
+                                                                <div class="vacancy-serp-item__meta-info">
+                                                                    <a href="/employer/1212374"
+                                                                       class="bloko-link bloko-link_secondary"
+                                                                       data-qa="vacancy-serp__vacancy-employer">
+                                                                        FunCorp</a>&nbsp;
+                                                                    <a class="bloko-link" target="_blank"
+                                                                       href="https://feedback.hh.ru/article/details/id/5951"><span
+                                                                            class="bloko-icon bloko-icon_done bloko-icon_initial-action"><script
+                                                                            data-name="HH/Tooltip/Hover" data-params="
+                    {
+                        &quot;placement&quot;: &quot;right&quot;,
+                        &quot;html&quot;: &quot;Компания прошла проверку на сайте&quot;,
+                        &quot;layer&quot;: &quot;overlay&quot;
+                    }
+                "></script></span></a>
+                                                                </div>
+                                                                <div class="vacancy-serp-item__meta-info">
+                                                                    <span class="vacancy-serp-item__meta-info"
+                                                                          data-qa="vacancy-serp__vacancy-address">Москва</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="vacancy-serp-item__sidebar">
+                                                                <div class="vacancy-serp-item__compensation"
+                                                                     data-qa="vacancy-serp__vacancy-compensation">
+                                                                    180&nbsp;000-250&nbsp;000 руб.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="vacancy-serp-item__row">
+                                                            <div class="vacancy-serp-item__info">
+                                                                <div data-qa="vacancy-serp__vacancy_snippet_responsibility">
+                                                                    Разработка серверной части высоконагруженного
+                                                                    проекта. Проектирование и реализация микросервисов.
+                                                                </div>
+                                                                <div data-qa="vacancy-serp__vacancy_snippet_requirement">
+                                                                    Опыт работы на
+                                                                    <span class="highlighted highlighted_short">Java</span>
+                                                                    или Kotlin от 3х лет. Знание алгоритмов и структур
+                                                                    данных. Опыт работы с базами данных...
+                                                                </div>
+                                                            </div>
+                                                            <div class="vacancy-serp-item__sidebar"></div>
+                                                        </div>
+                                                        <div class="vacancy-serp-item__row vacancy-serp-item__row_controls">
+                                                            <div class="HH-VacancyResponseTrigger-Button">
+                                                                <script data-name="HH/VacancyResponsePopup/VacancyResponsePopup"
+                                                                        data-params="
+                {
+                    &quot;isAutoOpen&quot;: false,
+                    &quot;stayOnPage&quot;: true,
+                    &quot;vacancyId&quot;: &quot;30637568&quot;,
+                    &quot;employerId&quot;: &quot;1212374&quot;,
+                    &quot;isWithoutTest&quot;: true,
+                    &quot;ignoreResponseCheck&quot;: true,
+                    &quot;trl&quot;: {
+                        &quot;responseTitle&quot;: &quot;Резюме доставлено&quot;,
+                        &quot;responseStats&quot;: &quot;Этот работодатель просматривает {0}% поступивших резюме&quot;,
+                        &quot;responseNoStats&quot;: &quot;Узнать о статусе резюме можно на странице откликов&quot;,
+                        &quot;viewResponse&quot;: &quot;Посмотреть&quot;,
+                        &quot;viewResponses&quot;: &quot;Смотреть отклики&quot;
+                    }
+                }
+            "></script>
+                                                                <span class="vacancy-serp-item__controls-item"><a
+                                                                        href="/applicant/vacancy_response?vacancyId=30637568"
+                                                                        class="bloko-link bloko-link_dimmed HH-VacancyResponsePopup-Link"
+                                                                        data-qa="vacancy-serp__vacancy_response">Откликнуться</a></span>
+                                                            </div>
+                                                            <div class="vacancy-serp-item__controls-item HH-VacancyResponseTrigger-Container g-hidden">
+                                                                <a href="/negotiations/gotopic?vacancy_id="
+                                                                   target="_blank" class="search-resume-item-label"
+                                                                   data-qa="vacancy-serp__vacancy_responded">Вы
+                                                                    откликнулись</a>
+                                                            </div>
+                                                            <span class="vacancy-serp-item__controls-item vacancy-serp-item__controls-item_last"
+                                                                  data-qa="vacancy-serp__vacancy-date"><span
+                                                                    class="vacancy-serp-item__publication-date">4&nbsp;мая</span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div data-qa="vacancy-serp__vacancy" class="vacancy-serp-item ">
+                                                        <script data-name="HH/VacancyResponseTrigger"
+                                                                data-params=""></script>
+                                                        <div class="vacancy-serp-item__row">
+                                                            <div class="vacancy-serp-item__info">
+                                                                <div class="resume-search-item__name">
+                                                                    <a class="bloko-link HH-LinkModifier"
+                                                                       data-qa="vacancy-serp__vacancy-title"
+                                                                       href="https://yubilejnyj.hh.ru/vacancy/28512134?query=java%20%25s"
+                                                                       data-position="3"
+                                                                       data-requestid="1556972248625d992da852c3289909d9"
+                                                                       data-totalvacancies="577" target="_blank">Senior
+                                                                        Java developer</a>
+                                                                </div>
+                                                                <div class="vacancy-serp-item__meta-info">
+                                                                    <a href="/employer/1212374"
+                                                                       class="bloko-link bloko-link_secondary"
+                                                                       data-qa="vacancy-serp__vacancy-employer">
+                                                                        FunCorp</a>&nbsp;
+                                                                    <a class="bloko-link" target="_blank"
+                                                                       href="https://feedback.hh.ru/article/details/id/5951"><span
+                                                                            class="bloko-icon bloko-icon_done bloko-icon_initial-action"><script
+                                                                            data-name="HH/Tooltip/Hover" data-params="
+                    {
+                        &quot;placement&quot;: &quot;right&quot;,
+                        &quot;html&quot;: &quot;Компания прошла проверку на сайте&quot;,
+                        &quot;layer&quot;: &quot;overlay&quot;
+                    }
+                "></script></span></a>
+                                                                </div>
+                                                                <div class="vacancy-serp-item__meta-info">
+                                                                    <span class="vacancy-serp-item__meta-info"
+                                                                          data-qa="vacancy-serp__vacancy-address">Москва</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="vacancy-serp-item__sidebar">
+                                                                <div class="vacancy-serp-item__compensation"
+                                                                     data-qa="vacancy-serp__vacancy-compensation">
+                                                                    180&nbsp;000-250&nbsp;000 руб.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="vacancy-serp-item__row">
+                                                            <div class="vacancy-serp-item__info">
+                                                                <div data-qa="vacancy-serp__vacancy_snippet_responsibility">
+                                                                    Разработка серверной части высоконагруженного
+                                                                    проекта. Проектирование и реализация микросервисов.
+                                                                </div>
+                                                                <div data-qa="vacancy-serp__vacancy_snippet_requirement">
+                                                                    Опыт работы на
+                                                                    <span class="highlighted highlighted_short">Java</span>
+                                                                    от 3х лет. Знание алгоритмов и структур данных. Опыт
+                                                                    работы с базами данных MongoDB/MySQL...
+                                                                </div>
+                                                            </div>
+                                                            <div class="vacancy-serp-item__sidebar"></div>
+                                                        </div>
+                                                        <div class="vacancy-serp-item__row vacancy-serp-item__row_controls">
+                                                            <div class="HH-VacancyResponseTrigger-Button">
+                                                                <script data-name="HH/VacancyResponsePopup/VacancyResponsePopup"
+                                                                        data-params="
+                {
+                    &quot;isAutoOpen&quot;: false,
+                    &quot;stayOnPage&quot;: true,
+                    &quot;vacancyId&quot;: &quot;28512134&quot;,
+                    &quot;employerId&quot;: &quot;1212374&quot;,
+                    &quot;isWithoutTest&quot;: true,
+                    &quot;ignoreResponseCheck&quot;: true,
+                    &quot;trl&quot;: {
+                        &quot;responseTitle&quot;: &quot;Резюме доставлено&quot;,
+                        &quot;responseStats&quot;: &quot;Этот работодатель просматривает {0}% поступивших резюме&quot;,
+                        &quot;responseNoStats&quot;: &quot;Узнать о статусе резюме можно на странице откликов&quot;,
+                        &quot;viewResponse&quot;: &quot;Посмотреть&quot;,
+                        &quot;viewResponses&quot;: &quot;Смотреть отклики&quot;
+                    }
+                }
+            "></script>
+                                                                <span class="vacancy-serp-item__controls-item"><a
+                                                                        href="/applicant/vacancy_response?vacancyId=28512134"
+                                                                        class="bloko-link bloko-link_dimmed HH-VacancyResponsePopup-Link"
+                                                                        data-qa="vacancy-serp__vacancy_response">Откликнуться</a></span>
+                                                            </div>
+                                                            <div class="vacancy-serp-item__controls-item HH-VacancyResponseTrigger-Container g-hidden">
+                                                                <a href="/negotiations/gotopic?vacancy_id="
+                                                                   target="_blank" class="search-resume-item-label"
+                                                                   data-qa="vacancy-serp__vacancy_responded">Вы
+                                                                    откликнулись</a>
+                                                            </div>
+                                                            <span class="vacancy-serp-item__controls-item vacancy-serp-item__controls-item_last"
+                                                                  data-qa="vacancy-serp__vacancy-date"><span
+                                                                    class="vacancy-serp-item__publication-date">4&nbsp;мая</span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div data-qa="vacancy-serp__vacancy" class="vacancy-serp-item ">
+                                                        <script data-name="HH/VacancyResponseTrigger"
+                                                                data-params=""></script>
+                                                        <div class="vacancy-serp-item__row">
+                                                            <div class="vacancy-serp-item__info">
+                                                                <div class="resume-search-item__name">
+                                                                    <a class="bloko-link HH-LinkModifier"
+                                                                       data-qa="vacancy-serp__vacancy-title"
+                                                                       href="https://yubilejnyj.hh.ru/vacancy/31179912?query=java%20%25s"
+                                                                       data-position="4"
+                                                                       data-requestid="1556972248625d992da852c3289909d9"
+                                                                       data-totalvacancies="577" target="_blank">Java
+                                                                        Developer</a>
+                                                                </div>
+                                                                <div class="vacancy-serp-item__meta-info">
+                                                                    <a href="/employer/924780"
+                                                                       class="bloko-link bloko-link_secondary"
+                                                                       data-qa="vacancy-serp__vacancy-employer">УП
+                                                                        Онтрэвл Солюшенз, Частное предприятие</a>&nbsp;
+                                                                    <a class="bloko-link" target="_blank"
+                                                                       href="https://feedback.hh.ru/article/details/id/5951"><span
+                                                                            class="bloko-icon bloko-icon_done bloko-icon_initial-action"><script
+                                                                            data-name="HH/Tooltip/Hover" data-params="
+                    {
+                        &quot;placement&quot;: &quot;right&quot;,
+                        &quot;html&quot;: &quot;Компания прошла проверку на сайте&quot;,
+                        &quot;layer&quot;: &quot;overlay&quot;
+                    }
+                "></script></span></a>
+                                                                </div>
+                                                                <div class="vacancy-serp-item__meta-info">
+                                                                    <span class="vacancy-serp-item__meta-info"
+                                                                          data-qa="vacancy-serp__vacancy-address">Минск, <span
+                                                                            class="metro-station"><span
+                                                                            class="metro-point"
+                                                                            style="color: #BF0808"></span>Молодежная</span></span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="vacancy-serp-item__sidebar"></div>
+                                                        </div>
+                                                        <div class="vacancy-serp-item__row">
+                                                            <div class="vacancy-serp-item__info">
+                                                                <div data-qa="vacancy-serp__vacancy_snippet_responsibility">
+                                                                    <resp></resp>
+                                                                </div>
+                                                                <div data-qa="vacancy-serp__vacancy_snippet_requirement">
+                                                                    От 1+ лет опыта работы с
+                                                                    <span class="highlighted highlighted_short">Java</span>
+                                                                    EE 8. Spring MVC, JMS,JPA. Опыт работы WebServices
+                                                                    (REST, SOAP, WebSockets...
+                                                                </div>
+                                                            </div>
+                                                            <div class="vacancy-serp-item__sidebar"></div>
+                                                        </div>
+                                                        <div class="vacancy-serp-item__row vacancy-serp-item__row_controls">
+                                                            <div class="HH-VacancyResponseTrigger-Button">
+                                                                <script data-name="HH/VacancyResponsePopup/VacancyResponsePopup"
+                                                                        data-params="
+                {
+                    &quot;isAutoOpen&quot;: false,
+                    &quot;stayOnPage&quot;: true,
+                    &quot;vacancyId&quot;: &quot;31179912&quot;,
+                    &quot;employerId&quot;: &quot;924780&quot;,
+                    &quot;isWithoutTest&quot;: true,
+                    &quot;ignoreResponseCheck&quot;: true,
+                    &quot;trl&quot;: {
+                        &quot;responseTitle&quot;: &quot;Резюме доставлено&quot;,
+                        &quot;responseStats&quot;: &quot;Этот работодатель просматривает {0}% поступивших резюме&quot;,
+                        &quot;responseNoStats&quot;: &quot;Узнать о статусе резюме можно на странице откликов&quot;,
+                        &quot;viewResponse&quot;: &quot;Посмотреть&quot;,
+                        &quot;viewResponses&quot;: &quot;Смотреть отклики&quot;
+                    }
+                }
+            "></script>
+                                                                <span class="vacancy-serp-item__controls-item"><a
+                                                                        href="/applicant/vacancy_response?vacancyId=31179912"
+                                                                        class="bloko-link bloko-link_dimmed HH-VacancyResponsePopup-Link"
+                                                                        data-qa="vacancy-serp__vacancy_response">Откликнуться</a></span>
+                                                            </div>
+                                                            <div class="vacancy-serp-item__controls-item HH-VacancyResponseTrigger-Container g-hidden">
+                                                                <a href="/negotiations/gotopic?vacancy_id="
+                                                                   target="_blank" class="search-resume-item-label"
+                                                                   data-qa="vacancy-serp__vacancy_responded">Вы
+                                                                    откликнулись</a>
+                                                            </div>
+                                                            <span class="vacancy-serp-item__controls-item vacancy-serp-item__controls-item_last"
+                                                                  data-qa="vacancy-serp__vacancy-date"><span
+                                                                    class="vacancy-serp-item__publication-date">4&nbsp;мая</span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div data-qa="vacancy-serp__vacancy" class="vacancy-serp-item ">
+                                                        <script data-name="HH/VacancyResponseTrigger"
+                                                                data-params=""></script>
+                                                        <div class="vacancy-serp-item__row">
+                                                            <div class="vacancy-serp-item__info">
+                                                                <div class="resume-search-item__name">
+                                                                    <a class="bloko-link HH-LinkModifier"
+                                                                       data-qa="vacancy-serp__vacancy-title"
+                                                                       href="https://yubilejnyj.hh.ru/vacancy/31326620?query=java%20%25s"
+                                                                       data-position="5"
+                                                                       data-requestid="1556972248625d992da852c3289909d9"
+                                                                       data-totalvacancies="577" target="_blank">Java
+                                                                        developer</a>
+                                                                </div>
+                                                                <div class="vacancy-serp-item__meta-info">
+                                                                    <a href="/employer/748586"
+                                                                       class="bloko-link bloko-link_secondary"
+                                                                       data-qa="vacancy-serp__vacancy-employer">
+                                                                        BelPrime</a>&nbsp;
+                                                                    <a class="bloko-link" target="_blank"
+                                                                       href="https://feedback.hh.ru/article/details/id/5951"><span
+                                                                            class="bloko-icon bloko-icon_done bloko-icon_initial-action"><script
+                                                                            data-name="HH/Tooltip/Hover" data-params="
+                    {
+                        &quot;placement&quot;: &quot;right&quot;,
+                        &quot;html&quot;: &quot;Компания прошла проверку на сайте&quot;,
+                        &quot;layer&quot;: &quot;overlay&quot;
+                    }
+                "></script></span></a>
+                                                                </div>
+                                                                <div class="vacancy-serp-item__meta-info">
+                                                                    <span class="vacancy-serp-item__meta-info"
+                                                                          data-qa="vacancy-serp__vacancy-address">Минск, <span
+                                                                            class="metro-station"><span
+                                                                            class="metro-point"
+                                                                            style="color: #0521C3"></span>Площадь Якуба Коласа</span></span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="vacancy-serp-item__sidebar"></div>
+                                                        </div>
+                                                        <div class="vacancy-serp-item__row">
+                                                            <div class="vacancy-serp-item__info">
+                                                                <div data-qa="vacancy-serp__vacancy_snippet_responsibility">
+                                                                    Writing fast, reliable (often multithreaded)
+                                                                    <span class="highlighted highlighted_short">Java</span>
+                                                                    code. Participating in architecture definition.
+                                                                    Creating new functionality and enhancing the one
+                                                                    currently in...
+                                                                </div>
+                                                                <div data-qa="vacancy-serp__vacancy_snippet_requirement">
+                                                                    4+ years of most recent work experience as
+                                                                    <span class="highlighted highlighted_short">Java</span>
+                                                                    developer. Artful command of the
+                                                                    <span class="highlighted highlighted_short">Java</span>
+                                                                    language and standard libraries...
+                                                                </div>
+                                                            </div>
+                                                            <div class="vacancy-serp-item__sidebar"></div>
+                                                        </div>
+                                                        <div class="vacancy-serp-item__row vacancy-serp-item__row_controls">
+                                                            <div class="HH-VacancyResponseTrigger-Button">
+                                                                <script data-name="HH/VacancyResponsePopup/VacancyResponsePopup"
+                                                                        data-params="
+                {
+                    &quot;isAutoOpen&quot;: false,
+                    &quot;stayOnPage&quot;: true,
+                    &quot;vacancyId&quot;: &quot;31326620&quot;,
+                    &quot;employerId&quot;: &quot;748586&quot;,
+                    &quot;isWithoutTest&quot;: true,
+                    &quot;ignoreResponseCheck&quot;: true,
+                    &quot;trl&quot;: {
+                        &quot;responseTitle&quot;: &quot;Резюме доставлено&quot;,
+                        &quot;responseStats&quot;: &quot;Этот работодатель просматривает {0}% поступивших резюме&quot;,
+                        &quot;responseNoStats&quot;: &quot;Узнать о статусе резюме можно на странице откликов&quot;,
+                        &quot;viewResponse&quot;: &quot;Посмотреть&quot;,
+                        &quot;viewResponses&quot;: &quot;Смотреть отклики&quot;
+                    }
+                }
+            "></script>
+                                                                <span class="vacancy-serp-item__controls-item"><a
+                                                                        href="/applicant/vacancy_response?vacancyId=31326620"
+                                                                        class="bloko-link bloko-link_dimmed HH-VacancyResponsePopup-Link"
+                                                                        data-qa="vacancy-serp__vacancy_response">Откликнуться</a></span>
+                                                            </div>
+                                                            <div class="vacancy-serp-item__controls-item HH-VacancyResponseTrigger-Container g-hidden">
+                                                                <a href="/negotiations/gotopic?vacancy_id="
+                                                                   target="_blank" class="search-resume-item-label"
+                                                                   data-qa="vacancy-serp__vacancy_responded">Вы
+                                                                    откликнулись</a>
+                                                            </div>
+                                                            <span class="vacancy-serp-item__controls-item vacancy-serp-item__controls-item_last"
+                                                                  data-qa="vacancy-serp__vacancy-date"><span
+                                                                    class="vacancy-serp-item__publication-date">4&nbsp;мая</span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="serp-special serp-special_large">
+                                                        <div class="HHC-Banner-221 banner-place banner-place_221 "
+                                                             data-banner-id="221" data-empty-class="banner-place_hide"
+                                                             data-loaded-class="banner-place_show"
+                                                             data-banner-additional-class="">
+                                                            <script data-name="HH/LoadBannerOnVisible" data-params="
+                {
+                    &quot;id&quot;: &quot;221&quot;,
+                    &quot;templateName&quot;: &quot;&quot;
+                }
+            "></script>
+                                                        </div>
+                                                    </div>
+                                                    <div class="serp-special serp-special_less-then-large">
+                                                        <div class="HHC-Banner-505 banner-place banner-place_505 "
+                                                             data-banner-id="505" data-empty-class="banner-place_hide"
+                                                             data-loaded-class="banner-place_show"
+                                                             data-banner-additional-class="">
+                                                            <script data-name="HH/LoadBannerOnVisible" data-params="
+                {
+                    &quot;id&quot;: &quot;505&quot;,
+                    &quot;templateName&quot;: &quot;&quot;
+                }
+            "></script>
+                                                        </div>
+                                                    </div>
+                                                    <div data-qa="vacancy-serp__vacancy" class="vacancy-serp-item ">
+                                                        <script data-name="HH/VacancyResponseTrigger"
+                                                                data-params=""></script>
+                                                        <div class="vacancy-serp-item__row">
+                                                            <div class="vacancy-serp-item__info">
+                                                                <div class="resume-search-item__name">
+                                                                    <a class="bloko-link HH-LinkModifier"
+                                                                       data-qa="vacancy-serp__vacancy-title"
                                                                        href="https://yubilejnyj.hh.ru/vacancy/31234652?query=java%20%25s"
-                                                                       data-position="1"
-                                                                       data-requestid="1556918775968d51a88224af18de07f9"
-                                                                       data-totalvacancies="572" target="_blank">C++/Java
+                                                                       data-position="6"
+                                                                       data-requestid="1556972248625d992da852c3289909d9"
+                                                                       data-totalvacancies="577" target="_blank">C++/Java
                                                                         developer (RX)</a>
                                                                 </div>
                                                                 <div class="vacancy-serp-item__meta-info">
@@ -3363,103 +3884,10 @@
                                                                 <div class="resume-search-item__name">
                                                                     <a class="bloko-link HH-LinkModifier"
                                                                        data-qa="vacancy-serp__vacancy-title"
-                                                                       href="https://yubilejnyj.hh.ru/vacancy/30637568?query=java%20%25s"
-                                                                       data-position="2"
-                                                                       data-requestid="1556918775968d51a88224af18de07f9"
-                                                                       data-totalvacancies="572" target="_blank">Java/Kotlin
-                                                                        Developer</a>
-                                                                </div>
-                                                                <div class="vacancy-serp-item__meta-info">
-                                                                    <a href="/employer/1212374"
-                                                                       class="bloko-link bloko-link_secondary"
-                                                                       data-qa="vacancy-serp__vacancy-employer">
-                                                                        FunCorp</a>&nbsp;
-                                                                    <a class="bloko-link" target="_blank"
-                                                                       href="https://feedback.hh.ru/article/details/id/5951"><span
-                                                                            class="bloko-icon bloko-icon_done bloko-icon_initial-action"><script
-                                                                            data-name="HH/Tooltip/Hover" data-params="
-                    {
-                        &quot;placement&quot;: &quot;right&quot;,
-                        &quot;html&quot;: &quot;Компания прошла проверку на сайте&quot;,
-                        &quot;layer&quot;: &quot;overlay&quot;
-                    }
-                "></script></span></a>
-                                                                </div>
-                                                                <div class="vacancy-serp-item__meta-info">
-                                                                    <span class="vacancy-serp-item__meta-info"
-                                                                          data-qa="vacancy-serp__vacancy-address">Москва</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="vacancy-serp-item__sidebar">
-                                                                <div class="vacancy-serp-item__compensation"
-                                                                     data-qa="vacancy-serp__vacancy-compensation">
-                                                                    180&nbsp;000-250&nbsp;000 руб.
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="vacancy-serp-item__row">
-                                                            <div class="vacancy-serp-item__info">
-                                                                <div data-qa="vacancy-serp__vacancy_snippet_responsibility">
-                                                                    Разработка серверной части высоконагруженного
-                                                                    проекта. Проектирование и реализация микросервисов.
-                                                                </div>
-                                                                <div data-qa="vacancy-serp__vacancy_snippet_requirement">
-                                                                    Опыт работы на
-                                                                    <span class="highlighted highlighted_short">Java</span>
-                                                                    или Kotlin от 3х лет. Знание алгоритмов и структур
-                                                                    данных. Опыт работы с базами данных...
-                                                                </div>
-                                                            </div>
-                                                            <div class="vacancy-serp-item__sidebar"></div>
-                                                        </div>
-                                                        <div class="vacancy-serp-item__row vacancy-serp-item__row_controls">
-                                                            <div class="HH-VacancyResponseTrigger-Button">
-                                                                <script data-name="HH/VacancyResponsePopup/VacancyResponsePopup"
-                                                                        data-params="
-                {
-                    &quot;isAutoOpen&quot;: false,
-                    &quot;stayOnPage&quot;: true,
-                    &quot;vacancyId&quot;: &quot;30637568&quot;,
-                    &quot;employerId&quot;: &quot;1212374&quot;,
-                    &quot;isWithoutTest&quot;: true,
-                    &quot;ignoreResponseCheck&quot;: true,
-                    &quot;trl&quot;: {
-                        &quot;responseTitle&quot;: &quot;Резюме доставлено&quot;,
-                        &quot;responseStats&quot;: &quot;Этот работодатель просматривает {0}% поступивших резюме&quot;,
-                        &quot;responseNoStats&quot;: &quot;Узнать о статусе резюме можно на странице откликов&quot;,
-                        &quot;viewResponse&quot;: &quot;Посмотреть&quot;,
-                        &quot;viewResponses&quot;: &quot;Смотреть отклики&quot;
-                    }
-                }
-            "></script>
-                                                                <span class="vacancy-serp-item__controls-item"><a
-                                                                        href="/applicant/vacancy_response?vacancyId=30637568"
-                                                                        class="bloko-link bloko-link_dimmed HH-VacancyResponsePopup-Link"
-                                                                        data-qa="vacancy-serp__vacancy_response">Откликнуться</a></span>
-                                                            </div>
-                                                            <div class="vacancy-serp-item__controls-item HH-VacancyResponseTrigger-Container g-hidden">
-                                                                <a href="/negotiations/gotopic?vacancy_id="
-                                                                   target="_blank" class="search-resume-item-label"
-                                                                   data-qa="vacancy-serp__vacancy_responded">Вы
-                                                                    откликнулись</a>
-                                                            </div>
-                                                            <span class="vacancy-serp-item__controls-item vacancy-serp-item__controls-item_last"
-                                                                  data-qa="vacancy-serp__vacancy-date"><span
-                                                                    class="vacancy-serp-item__publication-date">1&nbsp;мая</span></span>
-                                                        </div>
-                                                    </div>
-                                                    <div data-qa="vacancy-serp__vacancy" class="vacancy-serp-item ">
-                                                        <script data-name="HH/VacancyResponseTrigger"
-                                                                data-params=""></script>
-                                                        <div class="vacancy-serp-item__row">
-                                                            <div class="vacancy-serp-item__info">
-                                                                <div class="resume-search-item__name">
-                                                                    <a class="bloko-link HH-LinkModifier"
-                                                                       data-qa="vacancy-serp__vacancy-title"
                                                                        href="https://yubilejnyj.hh.ru/vacancy/30987010?query=java%20%25s"
-                                                                       data-position="3"
-                                                                       data-requestid="1556918775968d51a88224af18de07f9"
-                                                                       data-totalvacancies="572" target="_blank">Senior
+                                                                       data-position="7"
+                                                                       data-requestid="1556972248625d992da852c3289909d9"
+                                                                       data-totalvacancies="577" target="_blank">Senior
                                                                         Java Developr</a>
                                                                 </div>
                                                                 <div class="vacancy-serp-item__meta-info">
@@ -3576,9 +4004,9 @@
                                                                     <a class="bloko-link HH-LinkModifier"
                                                                        data-qa="vacancy-serp__vacancy-title"
                                                                        href="https://yubilejnyj.hh.ru/vacancy/30629727?query=java%20%25s"
-                                                                       data-position="4"
-                                                                       data-requestid="1556918775968d51a88224af18de07f9"
-                                                                       data-totalvacancies="572" target="_blank">Java
+                                                                       data-position="8"
+                                                                       data-requestid="1556972248625d992da852c3289909d9"
+                                                                       data-totalvacancies="577" target="_blank">Java
                                                                         developer</a>
                                                                 </div>
                                                                 <div class="vacancy-serp-item__meta-info">
@@ -3670,136 +4098,17 @@
                                                                 <div class="resume-search-item__name">
                                                                     <a class="bloko-link HH-LinkModifier"
                                                                        data-qa="vacancy-serp__vacancy-title"
-                                                                       href="https://yubilejnyj.hh.ru/vacancy/28512134?query=java%20%25s"
-                                                                       data-position="5"
-                                                                       data-requestid="1556918775968d51a88224af18de07f9"
-                                                                       data-totalvacancies="572" target="_blank">Senior
-                                                                        Java developer</a>
+                                                                       href="https://yubilejnyj.hh.ru/vacancy/31096030?query=java%20%25s"
+                                                                       data-position="9"
+                                                                       data-requestid="1556972248625d992da852c3289909d9"
+                                                                       data-totalvacancies="577" target="_blank">Java
+                                                                        Engineer</a>
                                                                 </div>
                                                                 <div class="vacancy-serp-item__meta-info">
-                                                                    <a href="/employer/1212374"
+                                                                    <a href="/employer/898831"
                                                                        class="bloko-link bloko-link_secondary"
                                                                        data-qa="vacancy-serp__vacancy-employer">
-                                                                        FunCorp</a>&nbsp;
-                                                                    <a class="bloko-link" target="_blank"
-                                                                       href="https://feedback.hh.ru/article/details/id/5951"><span
-                                                                            class="bloko-icon bloko-icon_done bloko-icon_initial-action"><script
-                                                                            data-name="HH/Tooltip/Hover" data-params="
-                    {
-                        &quot;placement&quot;: &quot;right&quot;,
-                        &quot;html&quot;: &quot;Компания прошла проверку на сайте&quot;,
-                        &quot;layer&quot;: &quot;overlay&quot;
-                    }
-                "></script></span></a>
-                                                                </div>
-                                                                <div class="vacancy-serp-item__meta-info">
-                                                                    <span class="vacancy-serp-item__meta-info"
-                                                                          data-qa="vacancy-serp__vacancy-address">Москва</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="vacancy-serp-item__sidebar">
-                                                                <div class="vacancy-serp-item__compensation"
-                                                                     data-qa="vacancy-serp__vacancy-compensation">
-                                                                    180&nbsp;000-250&nbsp;000 руб.
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="vacancy-serp-item__row">
-                                                            <div class="vacancy-serp-item__info">
-                                                                <div data-qa="vacancy-serp__vacancy_snippet_responsibility">
-                                                                    Разработка серверной части высоконагруженного
-                                                                    проекта. Проектирование и реализация микросервисов.
-                                                                </div>
-                                                                <div data-qa="vacancy-serp__vacancy_snippet_requirement">
-                                                                    Опыт работы на
-                                                                    <span class="highlighted highlighted_short">Java</span>
-                                                                    от 3х лет. Знание алгоритмов и структур данных. Опыт
-                                                                    работы с базами данных MongoDB/MySQL...
-                                                                </div>
-                                                            </div>
-                                                            <div class="vacancy-serp-item__sidebar"></div>
-                                                        </div>
-                                                        <div class="vacancy-serp-item__row vacancy-serp-item__row_controls">
-                                                            <div class="HH-VacancyResponseTrigger-Button">
-                                                                <script data-name="HH/VacancyResponsePopup/VacancyResponsePopup"
-                                                                        data-params="
-                {
-                    &quot;isAutoOpen&quot;: false,
-                    &quot;stayOnPage&quot;: true,
-                    &quot;vacancyId&quot;: &quot;28512134&quot;,
-                    &quot;employerId&quot;: &quot;1212374&quot;,
-                    &quot;isWithoutTest&quot;: true,
-                    &quot;ignoreResponseCheck&quot;: true,
-                    &quot;trl&quot;: {
-                        &quot;responseTitle&quot;: &quot;Резюме доставлено&quot;,
-                        &quot;responseStats&quot;: &quot;Этот работодатель просматривает {0}% поступивших резюме&quot;,
-                        &quot;responseNoStats&quot;: &quot;Узнать о статусе резюме можно на странице откликов&quot;,
-                        &quot;viewResponse&quot;: &quot;Посмотреть&quot;,
-                        &quot;viewResponses&quot;: &quot;Смотреть отклики&quot;
-                    }
-                }
-            "></script>
-                                                                <span class="vacancy-serp-item__controls-item"><a
-                                                                        href="/applicant/vacancy_response?vacancyId=28512134"
-                                                                        class="bloko-link bloko-link_dimmed HH-VacancyResponsePopup-Link"
-                                                                        data-qa="vacancy-serp__vacancy_response">Откликнуться</a></span>
-                                                            </div>
-                                                            <div class="vacancy-serp-item__controls-item HH-VacancyResponseTrigger-Container g-hidden">
-                                                                <a href="/negotiations/gotopic?vacancy_id="
-                                                                   target="_blank" class="search-resume-item-label"
-                                                                   data-qa="vacancy-serp__vacancy_responded">Вы
-                                                                    откликнулись</a>
-                                                            </div>
-                                                            <span class="vacancy-serp-item__controls-item vacancy-serp-item__controls-item_last"
-                                                                  data-qa="vacancy-serp__vacancy-date"><span
-                                                                    class="vacancy-serp-item__publication-date">1&nbsp;мая</span></span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="serp-special serp-special_large">
-                                                        <div class="HHC-Banner-221 banner-place banner-place_221 "
-                                                             data-banner-id="221" data-empty-class="banner-place_hide"
-                                                             data-loaded-class="banner-place_show"
-                                                             data-banner-additional-class="">
-                                                            <script data-name="HH/LoadBannerOnVisible" data-params="
-                {
-                    &quot;id&quot;: &quot;221&quot;,
-                    &quot;templateName&quot;: &quot;&quot;
-                }
-            "></script>
-                                                        </div>
-                                                    </div>
-                                                    <div class="serp-special serp-special_less-then-large">
-                                                        <div class="HHC-Banner-505 banner-place banner-place_505 "
-                                                             data-banner-id="505" data-empty-class="banner-place_hide"
-                                                             data-loaded-class="banner-place_show"
-                                                             data-banner-additional-class="">
-                                                            <script data-name="HH/LoadBannerOnVisible" data-params="
-                {
-                    &quot;id&quot;: &quot;505&quot;,
-                    &quot;templateName&quot;: &quot;&quot;
-                }
-            "></script>
-                                                        </div>
-                                                    </div>
-                                                    <div data-qa="vacancy-serp__vacancy" class="vacancy-serp-item ">
-                                                        <script data-name="HH/VacancyResponseTrigger"
-                                                                data-params=""></script>
-                                                        <div class="vacancy-serp-item__row">
-                                                            <div class="vacancy-serp-item__info">
-                                                                <div class="resume-search-item__name">
-                                                                    <a class="bloko-link HH-LinkModifier"
-                                                                       data-qa="vacancy-serp__vacancy-title"
-                                                                       href="https://yubilejnyj.hh.ru/vacancy/31179912?query=java%20%25s"
-                                                                       data-position="6"
-                                                                       data-requestid="1556918775968d51a88224af18de07f9"
-                                                                       data-totalvacancies="572" target="_blank">Java
-                                                                        Developer</a>
-                                                                </div>
-                                                                <div class="vacancy-serp-item__meta-info">
-                                                                    <a href="/employer/924780"
-                                                                       class="bloko-link bloko-link_secondary"
-                                                                       data-qa="vacancy-serp__vacancy-employer">УП
-                                                                        Онтрэвл Солюшенз, Частное предприятие</a>&nbsp;
+                                                                        WorkFusion</a>&nbsp;
                                                                     <a class="bloko-link" target="_blank"
                                                                        href="https://feedback.hh.ru/article/details/id/5951"><span
                                                                             class="bloko-icon bloko-icon_done bloko-icon_initial-action"><script
@@ -3816,7 +4125,10 @@
                                                                           data-qa="vacancy-serp__vacancy-address">Минск, <span
                                                                             class="metro-station"><span
                                                                             class="metro-point"
-                                                                            style="color: #BF0808"></span>Молодежная</span></span>
+                                                                            style="color: #0521C3"></span>Московская</span> и еще 1 <span
+                                                                            class="metro-station"><span
+                                                                            class="metro-point"
+                                                                            style="color: #0521C3"></span></span></span>
                                                                 </div>
                                                             </div>
                                                             <div class="vacancy-serp-item__sidebar"></div>
@@ -3824,13 +4136,20 @@
                                                         <div class="vacancy-serp-item__row">
                                                             <div class="vacancy-serp-item__info">
                                                                 <div data-qa="vacancy-serp__vacancy_snippet_responsibility">
-                                                                    <resp></resp>
+                                                                    ...Deloitte’
+                                                                    <span class="highlighted highlighted_short">s</span>
+                                                                    Technology Fast 500 2017. Design API to drive the
+                                                                    evolution of service integration. Feature
+                                                                    development with
+                                                                    <span class="highlighted highlighted_short">Java</span>
+                                                                    8...
                                                                 </div>
                                                                 <div data-qa="vacancy-serp__vacancy_snippet_requirement">
-                                                                    От 1+ лет опыта работы с
+                                                                    2+ years experience in
                                                                     <span class="highlighted highlighted_short">Java</span>
-                                                                    EE 8. Spring MVC, JMS,JPA. Опыт работы WebServices
-                                                                    (REST, SOAP, WebSockets...
+                                                                    programming. Solid knowledge of
+                                                                    <span class="highlighted highlighted_short">Java</span>
+                                                                    Core. Practical experience in Spring, Spring Boot.
                                                                 </div>
                                                             </div>
                                                             <div class="vacancy-serp-item__sidebar"></div>
@@ -3842,8 +4161,8 @@
                 {
                     &quot;isAutoOpen&quot;: false,
                     &quot;stayOnPage&quot;: true,
-                    &quot;vacancyId&quot;: &quot;31179912&quot;,
-                    &quot;employerId&quot;: &quot;924780&quot;,
+                    &quot;vacancyId&quot;: &quot;31096030&quot;,
+                    &quot;employerId&quot;: &quot;898831&quot;,
                     &quot;isWithoutTest&quot;: true,
                     &quot;ignoreResponseCheck&quot;: true,
                     &quot;trl&quot;: {
@@ -3856,7 +4175,7 @@
                 }
             "></script>
                                                                 <span class="vacancy-serp-item__controls-item"><a
-                                                                        href="/applicant/vacancy_response?vacancyId=31179912"
+                                                                        href="/applicant/vacancy_response?vacancyId=31096030"
                                                                         class="bloko-link bloko-link_dimmed HH-VacancyResponsePopup-Link"
                                                                         data-qa="vacancy-serp__vacancy_response">Откликнуться</a></span>
                                                             </div>
@@ -3880,9 +4199,9 @@
                                                                     <a class="bloko-link HH-LinkModifier"
                                                                        data-qa="vacancy-serp__vacancy-title"
                                                                        href="https://yubilejnyj.hh.ru/vacancy/31054823?query=java%20%25s"
-                                                                       data-position="7"
-                                                                       data-requestid="1556918775968d51a88224af18de07f9"
-                                                                       data-totalvacancies="572" target="_blank">Senior
+                                                                       data-position="10"
+                                                                       data-requestid="1556972248625d992da852c3289909d9"
+                                                                       data-totalvacancies="577" target="_blank">Senior
                                                                         Java Developer</a>
                                                                 </div>
                                                                 <div class="vacancy-serp-item__meta-info">
@@ -3969,9 +4288,9 @@
                                                                     <a class="bloko-link HH-LinkModifier"
                                                                        data-qa="vacancy-serp__vacancy-title"
                                                                        href="https://yubilejnyj.hh.ru/vacancy/31287981?query=java%20%25s"
-                                                                       data-position="8"
-                                                                       data-requestid="1556918775968d51a88224af18de07f9"
-                                                                       data-totalvacancies="572" target="_blank">Java
+                                                                       data-position="11"
+                                                                       data-requestid="1556972248625d992da852c3289909d9"
+                                                                       data-totalvacancies="577" target="_blank">Java
                                                                         Engineer</a>
                                                                 </div>
                                                                 <div class="vacancy-serp-item__meta-info">
@@ -4060,6 +4379,32 @@
                                                                     class="vacancy-serp-item__publication-date">2&nbsp;мая</span></span>
                                                         </div>
                                                     </div>
+                                                    <div class="serp-special serp-special_large">
+                                                        <div class="HHC-Banner-175 banner-place banner-place_175 "
+                                                             data-banner-id="175" data-empty-class="banner-place_hide"
+                                                             data-loaded-class="banner-place_show"
+                                                             data-banner-additional-class="">
+                                                            <script data-name="HH/LoadBannerOnVisible" data-params="
+                {
+                    &quot;id&quot;: &quot;175&quot;,
+                    &quot;templateName&quot;: &quot;&quot;
+                }
+            "></script>
+                                                        </div>
+                                                    </div>
+                                                    <div class="serp-special serp-special_less-then-large">
+                                                        <div class="HHC-Banner-505 banner-place banner-place_505 "
+                                                             data-banner-id="505" data-empty-class="banner-place_hide"
+                                                             data-loaded-class="banner-place_show"
+                                                             data-banner-additional-class="">
+                                                            <script data-name="HH/LoadBannerOnVisible" data-params="
+                {
+                    &quot;id&quot;: &quot;505&quot;,
+                    &quot;templateName&quot;: &quot;&quot;
+                }
+            "></script>
+                                                        </div>
+                                                    </div>
                                                     <div data-qa="vacancy-serp__vacancy" class="vacancy-serp-item ">
                                                         <script data-name="HH/VacancyResponseTrigger"
                                                                 data-params=""></script>
@@ -4069,9 +4414,9 @@
                                                                     <a class="bloko-link HH-LinkModifier"
                                                                        data-qa="vacancy-serp__vacancy-title"
                                                                        href="https://yubilejnyj.hh.ru/vacancy/31019296?query=java%20%25s"
-                                                                       data-position="9"
-                                                                       data-requestid="1556918775968d51a88224af18de07f9"
-                                                                       data-totalvacancies="572" target="_blank">Java
+                                                                       data-position="12"
+                                                                       data-requestid="1556972248625d992da852c3289909d9"
+                                                                       data-totalvacancies="577" target="_blank">Java
                                                                         Developer&nbsp;(senior level)</a>
                                                                 </div>
                                                                 <div class="vacancy-list-work-schedule HH-Vacancy-Work-Schedule"
@@ -4169,110 +4514,10 @@
                                                                 <div class="resume-search-item__name">
                                                                     <a class="bloko-link HH-LinkModifier"
                                                                        data-qa="vacancy-serp__vacancy-title"
-                                                                       href="https://yubilejnyj.hh.ru/vacancy/31096030?query=java%20%25s"
-                                                                       data-position="10"
-                                                                       data-requestid="1556918775968d51a88224af18de07f9"
-                                                                       data-totalvacancies="572" target="_blank">Java
-                                                                        Engineer</a>
-                                                                </div>
-                                                                <div class="vacancy-serp-item__meta-info">
-                                                                    <a href="/employer/898831"
-                                                                       class="bloko-link bloko-link_secondary"
-                                                                       data-qa="vacancy-serp__vacancy-employer">
-                                                                        WorkFusion</a>&nbsp;
-                                                                    <a class="bloko-link" target="_blank"
-                                                                       href="https://feedback.hh.ru/article/details/id/5951"><span
-                                                                            class="bloko-icon bloko-icon_done bloko-icon_initial-action"><script
-                                                                            data-name="HH/Tooltip/Hover" data-params="
-                    {
-                        &quot;placement&quot;: &quot;right&quot;,
-                        &quot;html&quot;: &quot;Компания прошла проверку на сайте&quot;,
-                        &quot;layer&quot;: &quot;overlay&quot;
-                    }
-                "></script></span></a>
-                                                                </div>
-                                                                <div class="vacancy-serp-item__meta-info">
-                                                                    <span class="vacancy-serp-item__meta-info"
-                                                                          data-qa="vacancy-serp__vacancy-address">Минск, <span
-                                                                            class="metro-station"><span
-                                                                            class="metro-point"
-                                                                            style="color: #0521C3"></span>Московская</span> и еще 1 <span
-                                                                            class="metro-station"><span
-                                                                            class="metro-point"
-                                                                            style="color: #0521C3"></span></span></span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="vacancy-serp-item__sidebar"></div>
-                                                        </div>
-                                                        <div class="vacancy-serp-item__row">
-                                                            <div class="vacancy-serp-item__info">
-                                                                <div data-qa="vacancy-serp__vacancy_snippet_responsibility">
-                                                                    ...Deloitte’
-                                                                    <span class="highlighted highlighted_short">s</span>
-                                                                    Technology Fast 500 2017. Design API to drive the
-                                                                    evolution of service integration. Feature
-                                                                    development with
-                                                                    <span class="highlighted highlighted_short">Java</span>
-                                                                    8...
-                                                                </div>
-                                                                <div data-qa="vacancy-serp__vacancy_snippet_requirement">
-                                                                    2+ years experience in
-                                                                    <span class="highlighted highlighted_short">Java</span>
-                                                                    programming. Solid knowledge of
-                                                                    <span class="highlighted highlighted_short">Java</span>
-                                                                    Core. Practical experience in Spring, Spring Boot.
-                                                                </div>
-                                                            </div>
-                                                            <div class="vacancy-serp-item__sidebar"></div>
-                                                        </div>
-                                                        <div class="vacancy-serp-item__row vacancy-serp-item__row_controls">
-                                                            <div class="HH-VacancyResponseTrigger-Button">
-                                                                <script data-name="HH/VacancyResponsePopup/VacancyResponsePopup"
-                                                                        data-params="
-                {
-                    &quot;isAutoOpen&quot;: false,
-                    &quot;stayOnPage&quot;: true,
-                    &quot;vacancyId&quot;: &quot;31096030&quot;,
-                    &quot;employerId&quot;: &quot;898831&quot;,
-                    &quot;isWithoutTest&quot;: true,
-                    &quot;ignoreResponseCheck&quot;: true,
-                    &quot;trl&quot;: {
-                        &quot;responseTitle&quot;: &quot;Резюме доставлено&quot;,
-                        &quot;responseStats&quot;: &quot;Этот работодатель просматривает {0}% поступивших резюме&quot;,
-                        &quot;responseNoStats&quot;: &quot;Узнать о статусе резюме можно на странице откликов&quot;,
-                        &quot;viewResponse&quot;: &quot;Посмотреть&quot;,
-                        &quot;viewResponses&quot;: &quot;Смотреть отклики&quot;
-                    }
-                }
-            "></script>
-                                                                <span class="vacancy-serp-item__controls-item"><a
-                                                                        href="/applicant/vacancy_response?vacancyId=31096030"
-                                                                        class="bloko-link bloko-link_dimmed HH-VacancyResponsePopup-Link"
-                                                                        data-qa="vacancy-serp__vacancy_response">Откликнуться</a></span>
-                                                            </div>
-                                                            <div class="vacancy-serp-item__controls-item HH-VacancyResponseTrigger-Container g-hidden">
-                                                                <a href="/negotiations/gotopic?vacancy_id="
-                                                                   target="_blank" class="search-resume-item-label"
-                                                                   data-qa="vacancy-serp__vacancy_responded">Вы
-                                                                    откликнулись</a>
-                                                            </div>
-                                                            <span class="vacancy-serp-item__controls-item vacancy-serp-item__controls-item_last"
-                                                                  data-qa="vacancy-serp__vacancy-date"><span
-                                                                    class="vacancy-serp-item__publication-date">1&nbsp;мая</span></span>
-                                                        </div>
-                                                    </div>
-                                                    <div data-qa="vacancy-serp__vacancy" class="vacancy-serp-item ">
-                                                        <script data-name="HH/VacancyResponseTrigger"
-                                                                data-params=""></script>
-                                                        <div class="vacancy-serp-item__row">
-                                                            <div class="vacancy-serp-item__info">
-                                                                <div class="resume-search-item__name">
-                                                                    <a class="bloko-link HH-LinkModifier"
-                                                                       data-qa="vacancy-serp__vacancy-title"
                                                                        href="https://yubilejnyj.hh.ru/vacancy/30950587?query=java%20%25s"
-                                                                       data-position="11"
-                                                                       data-requestid="1556918775968d51a88224af18de07f9"
-                                                                       data-totalvacancies="572" target="_blank">Senior/Middle
+                                                                       data-position="13"
+                                                                       data-requestid="1556972248625d992da852c3289909d9"
+                                                                       data-totalvacancies="577" target="_blank">Senior/Middle
                                                                         Java developer</a>
                                                                 </div>
                                                                 <div class="vacancy-serp-item__meta-info">
@@ -4357,32 +4602,6 @@
                                                                     class="vacancy-serp-item__publication-date">2&nbsp;мая</span></span>
                                                         </div>
                                                     </div>
-                                                    <div class="serp-special serp-special_large">
-                                                        <div class="HHC-Banner-175 banner-place banner-place_175 "
-                                                             data-banner-id="175" data-empty-class="banner-place_hide"
-                                                             data-loaded-class="banner-place_show"
-                                                             data-banner-additional-class="">
-                                                            <script data-name="HH/LoadBannerOnVisible" data-params="
-                {
-                    &quot;id&quot;: &quot;175&quot;,
-                    &quot;templateName&quot;: &quot;&quot;
-                }
-            "></script>
-                                                        </div>
-                                                    </div>
-                                                    <div class="serp-special serp-special_less-then-large">
-                                                        <div class="HHC-Banner-505 banner-place banner-place_505 "
-                                                             data-banner-id="505" data-empty-class="banner-place_hide"
-                                                             data-loaded-class="banner-place_show"
-                                                             data-banner-additional-class="">
-                                                            <script data-name="HH/LoadBannerOnVisible" data-params="
-                {
-                    &quot;id&quot;: &quot;505&quot;,
-                    &quot;templateName&quot;: &quot;&quot;
-                }
-            "></script>
-                                                        </div>
-                                                    </div>
                                                     <div data-qa="vacancy-serp__vacancy" class="vacancy-serp-item ">
                                                         <script data-name="HH/VacancyResponseTrigger"
                                                                 data-params=""></script>
@@ -4392,9 +4611,9 @@
                                                                     <a class="bloko-link HH-LinkModifier"
                                                                        data-qa="vacancy-serp__vacancy-title"
                                                                        href="https://yubilejnyj.hh.ru/vacancy/30204271?query=java%20%25s"
-                                                                       data-position="12"
-                                                                       data-requestid="1556918775968d51a88224af18de07f9"
-                                                                       data-totalvacancies="572" target="_blank">Software
+                                                                       data-position="14"
+                                                                       data-requestid="1556972248625d992da852c3289909d9"
+                                                                       data-totalvacancies="577" target="_blank">Software
                                                                         Development Principal Engineer in Java</a>
                                                                 </div>
                                                                 <div class="vacancy-serp-item__meta-info">
@@ -4496,9 +4715,9 @@
                                                                     <a class="bloko-link HH-LinkModifier"
                                                                        data-qa="vacancy-serp__vacancy-title"
                                                                        href="https://yubilejnyj.hh.ru/vacancy/30971210?query=java%20%25s"
-                                                                       data-position="13"
-                                                                       data-requestid="1556918775968d51a88224af18de07f9"
-                                                                       data-totalvacancies="572" target="_blank">Senior
+                                                                       data-position="15"
+                                                                       data-requestid="1556972248625d992da852c3289909d9"
+                                                                       data-totalvacancies="577" target="_blank">Senior
                                                                         Java Developer</a>
                                                                 </div>
                                                                 <div class="vacancy-serp-item__meta-info">
@@ -4590,9 +4809,9 @@
                                                                     <a class="bloko-link HH-LinkModifier"
                                                                        data-qa="vacancy-serp__vacancy-title"
                                                                        href="https://yubilejnyj.hh.ru/vacancy/30934832?query=java%20%25s"
-                                                                       data-position="14"
-                                                                       data-requestid="1556918775968d51a88224af18de07f9"
-                                                                       data-totalvacancies="572" target="_blank">Senior
+                                                                       data-position="16"
+                                                                       data-requestid="1556972248625d992da852c3289909d9"
+                                                                       data-totalvacancies="577" target="_blank">Senior
                                                                         Java Developer, Midrange</a>
                                                                 </div>
                                                                 <div class="vacancy-serp-item__meta-info">
@@ -4688,10 +4907,10 @@
                                                                     <a class="bloko-link HH-LinkModifier"
                                                                        data-qa="vacancy-serp__vacancy-title"
                                                                        href="https://yubilejnyj.hh.ru/vacancy/31254041?query=java%20%25s"
-                                                                       data-position="15"
-                                                                       data-requestid="1556918775968d51a88224af18de07f9"
-                                                                       data-totalvacancies="572" target="_blank">Android
-                                                                        (Java, Kotlin) Software Developer</a>
+                                                                       data-position="17"
+                                                                       data-requestid="1556972248625d992da852c3289909d9"
+                                                                       data-totalvacancies="577" target="_blank">Android
+                                                                        Software Developer (Java, Kotlin)</a>
                                                                 </div>
                                                                 <div class="vacancy-serp-item__meta-info">
                                                                     <a href="/employer/3207926"
@@ -4780,9 +4999,9 @@
                                                                     <a class="bloko-link HH-LinkModifier"
                                                                        data-qa="vacancy-serp__vacancy-title"
                                                                        href="https://yubilejnyj.hh.ru/vacancy/31288129?query=java%20%25s"
-                                                                       data-position="16"
-                                                                       data-requestid="1556918775968d51a88224af18de07f9"
-                                                                       data-totalvacancies="572" target="_blank">Senior
+                                                                       data-position="18"
+                                                                       data-requestid="1556972248625d992da852c3289909d9"
+                                                                       data-totalvacancies="577" target="_blank">Senior
                                                                         Java Engineer</a>
                                                                 </div>
                                                                 <div class="vacancy-serp-item__meta-info">
@@ -4878,9 +5097,9 @@
                                                                     <a class="bloko-link HH-LinkModifier"
                                                                        data-qa="vacancy-serp__vacancy-title"
                                                                        href="https://yubilejnyj.hh.ru/vacancy/31077611?query=java%20%25s"
-                                                                       data-position="17"
-                                                                       data-requestid="1556918775968d51a88224af18de07f9"
-                                                                       data-totalvacancies="572" target="_blank">Senior
+                                                                       data-position="19"
+                                                                       data-requestid="1556972248625d992da852c3289909d9"
+                                                                       data-totalvacancies="577" target="_blank">Senior
                                                                         Java Backend Developer (VMAX Sizer)</a>
                                                                 </div>
                                                                 <div class="vacancy-serp-item__meta-info">
@@ -4962,221 +5181,6 @@
                                                             <span class="vacancy-serp-item__controls-item vacancy-serp-item__controls-item_last"
                                                                   data-qa="vacancy-serp__vacancy-date"><span
                                                                     class="vacancy-serp-item__publication-date">3&nbsp;мая</span></span>
-                                                        </div>
-                                                    </div>
-                                                    <div data-qa="vacancy-serp__vacancy" class="vacancy-serp-item ">
-                                                        <script data-name="HH/VacancyResponseTrigger"
-                                                                data-params=""></script>
-                                                        <div class="vacancy-serp-item__row">
-                                                            <div class="vacancy-serp-item__info">
-                                                                <div class="resume-search-item__name">
-                                                                    <a class="bloko-link HH-LinkModifier"
-                                                                       data-qa="vacancy-serp__vacancy-title"
-                                                                       href="https://yubilejnyj.hh.ru/vacancy/30934826?query=java%20%25s"
-                                                                       data-position="18"
-                                                                       data-requestid="1556918775968d51a88224af18de07f9"
-                                                                       data-totalvacancies="572" target="_blank">Senior
-                                                                        Fullstack Developer (Java, JavaScript,Angular),
-                                                                        VMAX</a>
-                                                                </div>
-                                                                <div class="vacancy-serp-item__meta-info">
-                                                                    <a href="/employer/49556"
-                                                                       class="bloko-link bloko-link_secondary"
-                                                                       data-qa="vacancy-serp__vacancy-employer"> Dell
-                                                                        EMC</a>&nbsp;
-                                                                    <a class="bloko-link" target="_blank"
-                                                                       href="https://feedback.hh.ru/article/details/id/5951"><span
-                                                                            class="bloko-icon bloko-icon_done bloko-icon_initial-action"><script
-                                                                            data-name="HH/Tooltip/Hover" data-params="
-                    {
-                        &quot;placement&quot;: &quot;right&quot;,
-                        &quot;html&quot;: &quot;Компания прошла проверку на сайте&quot;,
-                        &quot;layer&quot;: &quot;overlay&quot;
-                    }
-                "></script></span></a>
-                                                                </div>
-                                                                <div class="vacancy-serp-item__meta-info">
-                                                                    <span class="vacancy-serp-item__meta-info"
-                                                                          data-qa="vacancy-serp__vacancy-address">Санкт-Петербург, <span
-                                                                            class="metro-station"><span
-                                                                            class="metro-point"
-                                                                            style="color: #009A49"></span>Василеостровская</span></span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="vacancy-serp-item__sidebar"></div>
-                                                        </div>
-                                                        <div class="vacancy-serp-item__row">
-                                                            <div class="vacancy-serp-item__info">
-                                                                <div data-qa="vacancy-serp__vacancy_snippet_responsibility">
-                                                                    The Software Engineering team delivers
-                                                                    next-generation software application enhancements
-                                                                    and new products for a changing world. Working at
-                                                                    the...
-                                                                </div>
-                                                                <div data-qa="vacancy-serp__vacancy_snippet_requirement">
-                                                                    <span class="highlighted highlighted_short">Java</span>
-                                                                    8/9 working knowledge. JavaScript technologies
-                                                                    working knowledge (any Angular-like framework).
-                                                                    Bachelor'
-                                                                    <span class="highlighted highlighted_short">s</span>
-                                                                    degree in Computer Science, Software...
-                                                                </div>
-                                                            </div>
-                                                            <div class="vacancy-serp-item__sidebar">
-                                                                <a href="/employer/49556"
-                                                                   data-qa="vacancy-serp__vacancy-employer-logo"><img
-                                                                        src="https://hhcdn.ru/employer-logo/1950106.png"
-                                                                        alt="Dell EMC" class="vacancy-serp-item__logo"></a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="vacancy-serp-item__row vacancy-serp-item__row_controls">
-                                                            <div class="HH-VacancyResponseTrigger-Button">
-                                                                <script data-name="HH/VacancyResponsePopup/VacancyResponsePopup"
-                                                                        data-params="
-                {
-                    &quot;isAutoOpen&quot;: false,
-                    &quot;stayOnPage&quot;: true,
-                    &quot;vacancyId&quot;: &quot;30934826&quot;,
-                    &quot;employerId&quot;: &quot;49556&quot;,
-                    &quot;isWithoutTest&quot;: true,
-                    &quot;ignoreResponseCheck&quot;: true,
-                    &quot;trl&quot;: {
-                        &quot;responseTitle&quot;: &quot;Резюме доставлено&quot;,
-                        &quot;responseStats&quot;: &quot;Этот работодатель просматривает {0}% поступивших резюме&quot;,
-                        &quot;responseNoStats&quot;: &quot;Узнать о статусе резюме можно на странице откликов&quot;,
-                        &quot;viewResponse&quot;: &quot;Посмотреть&quot;,
-                        &quot;viewResponses&quot;: &quot;Смотреть отклики&quot;
-                    }
-                }
-            "></script>
-                                                                <span class="vacancy-serp-item__controls-item"><a
-                                                                        href="/applicant/vacancy_response?vacancyId=30934826"
-                                                                        class="bloko-link bloko-link_dimmed HH-VacancyResponsePopup-Link"
-                                                                        data-qa="vacancy-serp__vacancy_response">Откликнуться</a></span>
-                                                            </div>
-                                                            <div class="vacancy-serp-item__controls-item HH-VacancyResponseTrigger-Container g-hidden">
-                                                                <a href="/negotiations/gotopic?vacancy_id="
-                                                                   target="_blank" class="search-resume-item-label"
-                                                                   data-qa="vacancy-serp__vacancy_responded">Вы
-                                                                    откликнулись</a>
-                                                            </div>
-                                                            <span class="vacancy-serp-item__controls-item vacancy-serp-item__controls-item_last"
-                                                                  data-qa="vacancy-serp__vacancy-date"><span
-                                                                    class="vacancy-serp-item__publication-date">2&nbsp;мая</span></span>
-                                                        </div>
-                                                    </div>
-                                                    <div data-qa="vacancy-serp__vacancy" class="vacancy-serp-item ">
-                                                        <script data-name="HH/VacancyResponseTrigger"
-                                                                data-params=""></script>
-                                                        <div class="vacancy-serp-item__row">
-                                                            <div class="vacancy-serp-item__info">
-                                                                <div class="resume-search-item__name">
-                                                                    <a class="bloko-link HH-LinkModifier"
-                                                                       data-qa="vacancy-serp__vacancy-title"
-                                                                       href="https://yubilejnyj.hh.ru/vacancy/31266616?query=java%20%25s"
-                                                                       data-position="19"
-                                                                       data-requestid="1556918775968d51a88224af18de07f9"
-                                                                       data-totalvacancies="572" target="_blank">Senior
-                                                                        Java Developer (government R&amp;D)</a>
-                                                                </div>
-                                                                <div class="vacancy-serp-item__meta-info">
-                                                                    <a href="/employer/764143"
-                                                                       class="bloko-link bloko-link_secondary"
-                                                                       data-qa="vacancy-serp__vacancy-employer">
-                                                                        NATEK</a>&nbsp;
-                                                                    <a class="bloko-link" target="_blank"
-                                                                       href="https://feedback.hh.ru/article/details/id/5951"><span
-                                                                            class="bloko-icon bloko-icon_done bloko-icon_initial-action"><script
-                                                                            data-name="HH/Tooltip/Hover" data-params="
-                    {
-                        &quot;placement&quot;: &quot;right&quot;,
-                        &quot;html&quot;: &quot;Компания прошла проверку на сайте&quot;,
-                        &quot;layer&quot;: &quot;overlay&quot;
-                    }
-                "></script></span></a>
-                                                                </div>
-                                                                <div class="vacancy-serp-item__meta-info">
-                                                                    <span class="vacancy-serp-item__meta-info"
-                                                                          data-qa="vacancy-serp__vacancy-address">Чехия</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="vacancy-serp-item__sidebar"></div>
-                                                        </div>
-                                                        <div class="vacancy-serp-item__row">
-                                                            <div class="vacancy-serp-item__info">
-                                                                <div data-qa="vacancy-serp__vacancy_snippet_responsibility">
-                                                                    In our team, we use
-                                                                    <span class="highlighted highlighted_short">Java</span>
-                                                                    EE and Spring for the development of web
-                                                                    applications focused on the production of...
-                                                                </div>
-                                                                <div data-qa="vacancy-serp__vacancy_snippet_requirement">
-                                                                    You do not need to have a university degree in
-                                                                    computer science, but it’
-                                                                    <span class="highlighted highlighted_short">s</span>
-                                                                    surely an advantage.
-                                                                </div>
-                                                            </div>
-                                                            <div class="vacancy-serp-item__sidebar"></div>
-                                                        </div>
-                                                        <div class="vacancy-serp-item__row vacancy-serp-item__row_controls">
-                                                            <div class="HH-VacancyResponseTrigger-Button">
-                                                                <script data-name="HH/VacancyResponsePopup/VacancyResponsePopup"
-                                                                        data-params="
-                {
-                    &quot;isAutoOpen&quot;: false,
-                    &quot;stayOnPage&quot;: true,
-                    &quot;vacancyId&quot;: &quot;31266616&quot;,
-                    &quot;employerId&quot;: &quot;764143&quot;,
-                    &quot;isWithoutTest&quot;: true,
-                    &quot;ignoreResponseCheck&quot;: true,
-                    &quot;trl&quot;: {
-                        &quot;responseTitle&quot;: &quot;Резюме доставлено&quot;,
-                        &quot;responseStats&quot;: &quot;Этот работодатель просматривает {0}% поступивших резюме&quot;,
-                        &quot;responseNoStats&quot;: &quot;Узнать о статусе резюме можно на странице откликов&quot;,
-                        &quot;viewResponse&quot;: &quot;Посмотреть&quot;,
-                        &quot;viewResponses&quot;: &quot;Смотреть отклики&quot;
-                    }
-                }
-            "></script>
-                                                                <span class="vacancy-serp-item__controls-item"><a
-                                                                        href="/applicant/vacancy_response?vacancyId=31266616"
-                                                                        class="bloko-link bloko-link_dimmed HH-VacancyResponsePopup-Link"
-                                                                        data-qa="vacancy-serp__vacancy_response">Откликнуться</a></span>
-                                                            </div>
-                                                            <div class="vacancy-serp-item__controls-item HH-VacancyResponseTrigger-Container g-hidden">
-                                                                <a href="/negotiations/gotopic?vacancy_id="
-                                                                   target="_blank" class="search-resume-item-label"
-                                                                   data-qa="vacancy-serp__vacancy_responded">Вы
-                                                                    откликнулись</a>
-                                                            </div>
-                                                            <span class="vacancy-serp-item__controls-item"><span
-                                                                    class="bloko-link bloko-link_dimmed"
-                                                                    data-qa="vacancy-serp__vacancy_contacts"><span
-                                                                    class="vacancy-serp-item__control vacancy-serp-item__control_gt-xs">Показать контакты</span><span
-                                                                    class="vacancy-serp-item__control vacancy-serp-item__control_xs-only">Контакты</span><script
-                                                                    data-name="HH/VacancyContactsLoader/VacancyContactsLoader"
-                                                                    data-params="
-                    {
-                        &quot;id&quot;: 31266616,
-                        &quot;vacancyData&quot;: {
-                            &quot;title&quot;: &quot;Senior Java Developer (government R&amp;D)&quot;,
-                            &quot;salaryFrom&quot;: &quot;&quot;,
-                            &quot;salaryTo&quot;: &quot;&quot;,
-                            &quot;currency&quot;: &quot;&quot;
-                        }
-                    }
-                "></script><script data-name="HH/SendAnalytics" data-params="
-                    {
-                        &quot;onEvent&quot;: &quot;click&quot;,
-                        &quot;category&quot;: &quot;view_contacts&quot;,
-                        &quot;action&quot;: &quot;profArea_push&quot;,
-                        &quot;label&quot;: 31266616
-                    }
-                "></script></span></span>
-                                                            <span class="vacancy-serp-item__controls-item vacancy-serp-item__controls-item_last"
-                                                                  data-qa="vacancy-serp__vacancy-date"><span
-                                                                    class="vacancy-serp-item__publication-date">2&nbsp;мая</span></span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -5472,8 +5476,8 @@
                                 </div>
                             </div>
                             <div class="footer__additional-text">
-                                <p>Сегодня на сайте 548&nbsp;130&nbsp;вакансий, 39&nbsp;213&nbsp;999&nbsp;резюме, 1&nbsp;016&nbsp;247&nbsp;компаний
-                                    и за неделю 574&nbsp;127&nbsp;приглашений</p>
+                                <p>Сегодня на сайте 549&nbsp;710&nbsp;вакансий, 39&nbsp;218&nbsp;347&nbsp;резюме, 1&nbsp;016&nbsp;369&nbsp;компаний
+                                    и за неделю 595&nbsp;480&nbsp;приглашений</p>
                             </div>
                             <div class="footer-counters">
                                 <!--noindex-->
@@ -5572,7 +5576,7 @@
                                 <!--dmp1 counter-->
                                 <script>
 
-                                    new Image().src = "//sync.1dmp.io/pixel.gif?cid=1a38ad2d-8623-4917-b947-c595cdcab795&pid=ca7a9082-fb70-4d18-8da4-ca798bb2c7b8&brid=d9e67206-6661-460a-8774-aa6db049c143&uid=d3f19e6e930873c055a477cad71b48c7a05f2bd52c09b226bb1c1de15444be52";
+                                    new Image().src = "//sync.1dmp.io/pixel.gif?cid=1a38ad2d-8623-4917-b947-c595cdcab795&pid=ca7a9082-fb70-4d18-8da4-ca798bb2c7b8&brid=d9e67206-6661-460a-8774-aa6db049c143&uid=3fea8974d6167674d14ea5d66b8f10e683f56eb1d9b76c0aa968f13d656b7914";
 
                                 </script>
                                 <!--/dmp1 counter-->
