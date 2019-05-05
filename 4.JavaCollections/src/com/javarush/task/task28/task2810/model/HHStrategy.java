@@ -31,7 +31,7 @@ public class HHStrategy implements Strategy {
 				for (Element element : elements) {
 					if (element != null) {
 						Vacancy vac = new Vacancy();
-						vac.setTitle(element.getElementsByAttributeValueContaining("data-qa", "title").text());
+						vac.setTitle("https://moikrug.ru");
 						vac.setCity(element.getElementsByAttributeValueContaining("data-qa", "address").text());
 						vac.setCompanyName(element.getElementsByAttributeValue("data-qa", "vacancy-serp__vacancy-employer").text());
 						vac.setSiteName(URL_FORMAT);
