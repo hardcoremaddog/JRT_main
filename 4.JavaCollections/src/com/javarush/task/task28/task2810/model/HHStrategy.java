@@ -20,10 +20,8 @@ public class HHStrategy implements Strategy {
 	public List<Vacancy> getVacancies(String searchString) {
 		List<Vacancy> vacancies = new ArrayList<>();
 
-		Document doc = null;
-
 		try {
-			doc = getDocument(searchString, PAGE_VALUE);
+			Document doc = getDocument(searchString, PAGE_VALUE);
 			while (true) {
 				Elements elements = doc.getElementsByAttributeValue("data-qa", "vacancy-serp__vacancy");
 				if (elements.size() == 0) {
@@ -57,10 +55,9 @@ public class HHStrategy implements Strategy {
 		if (searchString != null) {
 			String url = String.format(URL_FORMAT, searchString, page);
 			Connection connection = Jsoup.connect(url);
-			Document doc = connection
+			return connection
 					.userAgent("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36")
 					.referrer("no-referrer-when-downgrade").get();
-			return doc;
 		}
 		return null;
 	}

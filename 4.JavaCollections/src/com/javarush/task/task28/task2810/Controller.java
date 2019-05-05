@@ -1,37 +1,18 @@
 package com.javarush.task.task28.task2810;
 
-import com.javarush.task.task28.task2810.model.Provider;
-
-import java.util.Arrays;
+import com.javarush.task.task28.task2810.model.Model;
 
 public class Controller {
+	private Model model;
 
-	private Provider[] providers;
-
-	public Controller(Provider... providers) {
-		if (providers.length == 0) {
+	public Controller(Model model) {
+		if (model == null) {
 			throw new IllegalArgumentException();
 		}
-
-		this.providers = providers;
+		this.model = model;
 	}
 
-	@Override
-	public String toString() {
-		return "Controller{" +
-				"providers=" + Arrays.toString(providers) +
-				'}';
-	}
-
-
-	public void scan() {
-		int vacanciesCount = 0;
-
-		if (providers != null) {
-			for (Provider provider : providers) {
-				vacanciesCount += provider.getJavaVacancies("Java Киев").size();
-			}
-		}
-		System.out.println(vacanciesCount);
+	public void onCitySelect(String cityName) {
+		model.selectCity(cityName);
 	}
 }
