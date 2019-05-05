@@ -9,9 +9,7 @@ import java.util.List;
 
 public class HtmlView implements View {
 	private Controller controller;
-	private final String filePath = "./4.JavaCollections/src/"
-			+ this.getClass().getPackage().getName().replaceAll("\\.", "/")
-			+ "/vacancies.html";
+	private final String filePath = "./4.JavaCollections/src/" + this.getClass().getPackage().getName().replaceAll("\\.", "/") + "/vacancies.html";
 
 	@Override
 	public void update(List<Vacancy> vacancies) {
