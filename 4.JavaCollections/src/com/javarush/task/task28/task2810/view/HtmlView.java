@@ -1,8 +1,12 @@
 package com.javarush.task.task28.task2810.view;
 
+import com.google.common.base.Utf8;
 import com.javarush.task.task28.task2810.Controller;
 import com.javarush.task.task28.task2810.vo.Vacancy;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
 
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.List;
@@ -28,6 +32,10 @@ public class HtmlView implements View {
 	public void userCitySelectEmulationMethod() {
 		controller.onCitySelect("Odessa");
 
+	}
+
+	protected Document getDocument() throws IOException {
+		return Jsoup.parse(new File(filePath), "UTF-8");
 	}
 
 	private String getUpdatedFileContent(List<Vacancy> vacancies) {
