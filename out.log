@@ -303,3 +303,129 @@
 2019-05-08 00:08:29 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
 2019-05-08 00:08:29 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
 2019-05-08 00:08:29 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-07 21:13:42 INFO  PluginTasksProjectComponent.projectOpened(77) - ---------- Project opened ----------
+2019-05-07 21:13:42 INFO  PluginTasksProjectComponent.projectOpened(78) - ---------- Version 3.30 ----------
+
+2019-05-07 21:13:42 INFO  ApacheHttpClient.createAsyncHttpClient(135) - 1 proxies selected. Type: DIRECT
+2019-05-07 21:13:42 INFO  ApacheHttpClient.<init>(93) - ApacheHttpClient was successfully instantiated.
+2019-05-07 21:13:42 INFO  ApacheHttpClient.testConnection(193) - responseCode = 200
+2019-05-07 21:13:42 INFO  ApacheHttpClient.testConnection(208) - result = true
+2019-05-07 21:13:43 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(585) - Waiting for server response.
+2019-05-07 21:13:43 INFO  ApacheHttpClient.refreshUserInfo(293) - responseCode = 200
+2019-05-07 21:13:43 INFO  ApacheHttpClient.refreshUserInfo(299) - User information received.
+2019-05-07 21:13:43 INFO  ApacheHttpClient.startGA(35) - GAService started.
+2019-05-07 21:13:43 INFO  AbstractRestApiClient.startService(71) - EventsService started.
+2019-05-07 21:13:53 INFO  ApacheHttpClient.getWebResourceAsStream(485) - responseCode = 200
+2019-05-07 21:13:53 INFO  ApacheHttpClient.getFilteredTasks(324) - responseCode = 200
+2019-05-07 21:14:43 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-07 21:15:43 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-07 21:16:04 INFO  PluginTasksProjectComponent.projectClosing(188) - ---------- Project closed ----------
+
+2019-05-07 21:16:04 INFO  ApacheHttpClient.getTask(471) - responseCode = 200
+2019-05-07 21:16:45 INFO  PluginTasksProjectComponent.projectOpened(77) - ---------- Project opened ----------
+2019-05-07 21:16:45 INFO  PluginTasksProjectComponent.projectOpened(78) - ---------- Version 3.30 ----------
+
+2019-05-07 21:16:45 INFO  ApacheHttpClient.createAsyncHttpClient(135) - 1 proxies selected. Type: DIRECT
+2019-05-07 21:16:45 INFO  ApacheHttpClient.<init>(93) - ApacheHttpClient was successfully instantiated.
+2019-05-07 21:16:46 INFO  ApacheHttpClient.testConnection(193) - responseCode = 200
+2019-05-07 21:16:46 INFO  ApacheHttpClient.testConnection(208) - result = true
+2019-05-07 21:16:46 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(585) - Waiting for server response.
+2019-05-07 21:16:46 INFO  ApacheHttpClient.refreshUserInfo(293) - responseCode = 200
+2019-05-07 21:16:46 INFO  ApacheHttpClient.refreshUserInfo(299) - User information received.
+2019-05-07 21:16:46 INFO  ApacheHttpClient.startGA(35) - GAService started.
+2019-05-07 21:16:46 INFO  AbstractRestApiClient.startService(71) - EventsService started.
+2019-05-07 21:17:46 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-07 21:18:46 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-07 21:19:46 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-07 21:19:49 INFO  ApacheHttpClient.getWebResourceAsStream(485) - responseCode = 200
+2019-05-07 21:19:49 INFO  ApacheHttpClient.getFilteredTasks(324) - responseCode = 200
+2019-05-07 21:19:51 INFO  PluginTasksProjectComponent.projectClosing(188) - ---------- Project closed ----------
+
+2019-05-07 21:19:51 INFO  ApacheHttpClient.getTask(471) - responseCode = 200
+2019-05-07 21:19:51 INFO  ApacheHttpClient.getTask(471) - responseCode = 200
+2019-05-07 21:20:10 INFO  PluginTasksProjectComponent.projectOpened(77) - ---------- Project opened ----------
+2019-05-07 21:20:10 INFO  PluginTasksProjectComponent.projectOpened(78) - ---------- Version 3.30 ----------
+
+2019-05-07 21:20:10 INFO  ApacheHttpClient.createAsyncHttpClient(135) - 1 proxies selected. Type: DIRECT
+2019-05-07 21:20:10 INFO  ApacheHttpClient.<init>(93) - ApacheHttpClient was successfully instantiated.
+2019-05-07 21:20:11 INFO  ApacheHttpClient.testConnection(193) - responseCode = 200
+2019-05-07 21:20:11 INFO  ApacheHttpClient.testConnection(208) - result = true
+2019-05-07 21:20:11 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(585) - Waiting for server response.
+2019-05-07 21:20:11 INFO  ApacheHttpClient.refreshUserInfo(293) - responseCode = 200
+2019-05-07 21:20:11 INFO  ApacheHttpClient.refreshUserInfo(299) - User information received.
+2019-05-07 21:20:11 INFO  ApacheHttpClient.startGA(35) - GAService started.
+2019-05-07 21:20:11 INFO  AbstractRestApiClient.startService(71) - EventsService started.
+2019-05-07 21:21:11 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-07 21:21:41 INFO  PluginTasksProjectComponent.projectClosing(188) - ---------- Project closed ----------
+
+2019-05-07 21:21:41 INFO  ApacheHttpClient.getTask(471) - responseCode = 200
+2019-05-08 23:24:15 INFO  PluginTasksProjectComponent.projectOpened(77) - ---------- Project opened ----------
+2019-05-08 23:24:15 INFO  PluginTasksProjectComponent.projectOpened(78) - ---------- Version 3.30 ----------
+
+2019-05-08 23:24:15 INFO  ApacheHttpClient.createAsyncHttpClient(135) - 1 proxies selected. Type: DIRECT
+2019-05-08 23:24:15 INFO  ApacheHttpClient.<init>(93) - ApacheHttpClient was successfully instantiated.
+2019-05-08 23:24:15 INFO  ApacheHttpClient.testConnection(193) - responseCode = 200
+2019-05-08 23:24:15 INFO  ApacheHttpClient.testConnection(208) - result = true
+2019-05-08 23:24:16 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(585) - Waiting for server response.
+2019-05-08 23:24:16 INFO  ApacheHttpClient.refreshUserInfo(293) - responseCode = 200
+2019-05-08 23:24:16 INFO  ApacheHttpClient.refreshUserInfo(299) - User information received.
+2019-05-08 23:24:16 INFO  ApacheHttpClient.startGA(35) - GAService started.
+2019-05-08 23:24:16 INFO  AbstractRestApiClient.startService(71) - EventsService started.
+2019-05-08 23:24:48 INFO  PluginTasksProjectComponent.projectClosing(188) - ---------- Project closed ----------
+
+2019-05-08 23:24:48 INFO  ApacheHttpClient.getTask(471) - responseCode = 200
+2019-05-14 14:48:13 INFO  PluginTasksProjectComponent.projectOpened(77) - ---------- Project opened ----------
+2019-05-14 14:48:13 INFO  PluginTasksProjectComponent.projectOpened(78) - ---------- Version 3.30 ----------
+
+2019-05-14 14:48:13 INFO  ApacheHttpClient.createAsyncHttpClient(135) - 1 proxies selected. Type: DIRECT
+2019-05-14 14:48:13 INFO  ApacheHttpClient.<init>(93) - ApacheHttpClient was successfully instantiated.
+2019-05-14 14:48:13 INFO  ApacheHttpClient.testConnection(193) - responseCode = 200
+2019-05-14 14:48:13 INFO  ApacheHttpClient.testConnection(208) - result = true
+2019-05-14 14:48:14 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(585) - Waiting for server response.
+2019-05-14 14:48:14 INFO  ApacheHttpClient.refreshUserInfo(293) - responseCode = 200
+2019-05-14 14:48:14 INFO  ApacheHttpClient.refreshUserInfo(299) - User information received.
+2019-05-14 14:48:15 INFO  ApacheHttpClient.startGA(35) - GAService started.
+2019-05-14 14:48:15 INFO  AbstractRestApiClient.startService(71) - EventsService started.
+2019-05-14 14:48:19 INFO  ApacheHttpClient.getWebResourceAsStream(485) - responseCode = 200
+2019-05-14 14:48:19 INFO  ApacheHttpClient.getFilteredTasks(324) - responseCode = 200
+2019-05-14 14:48:46 INFO  ApacheHttpClient.getWebResourceAsStream(485) - responseCode = 200
+2019-05-14 14:48:46 INFO  ApacheHttpClient.getFilteredTasks(324) - responseCode = 200
+2019-05-14 14:48:57 INFO  ApacheHttpClient.getTaskTemplateInfo(341) - responseCode = 200
+2019-05-14 14:48:58 INFO  ApacheHttpClient.testConnection(193) - responseCode = 200
+2019-05-14 14:48:58 INFO  ApacheHttpClient.testConnection(208) - result = true
+2019-05-14 14:49:00 INFO  ApacheHttpClient.testConnection(193) - responseCode = 200
+2019-05-14 14:49:00 INFO  ApacheHttpClient.testConnection(208) - result = true
+2019-05-14 14:49:01 INFO  ApacheHttpClient.getWebResourceAsStream(485) - responseCode = 200
+2019-05-14 14:49:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-14 14:50:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-14 14:50:41 INFO  ApacheHttpClient.testConnection(193) - responseCode = 200
+2019-05-14 14:50:41 INFO  ApacheHttpClient.testConnection(208) - result = true
+2019-05-14 14:50:42 INFO  ApacheHttpClient.testConnection(193) - responseCode = 200
+2019-05-14 14:50:42 INFO  ApacheHttpClient.testConnection(208) - result = true
+2019-05-14 14:51:02 INFO  ApacheHttpClient.testConnection(193) - responseCode = 200
+2019-05-14 14:51:02 INFO  ApacheHttpClient.testConnection(208) - result = true
+2019-05-14 14:51:06 INFO  ApacheHttpClient.testConnection(193) - responseCode = 200
+2019-05-14 14:51:06 INFO  ApacheHttpClient.testConnection(208) - result = true
+2019-05-14 14:51:13 INFO  ApacheHttpClient.testConnection(193) - responseCode = 200
+2019-05-14 14:51:13 INFO  ApacheHttpClient.testConnection(208) - result = true
+2019-05-14 14:51:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-14 14:51:44 INFO  ApacheHttpClient.testConnection(193) - responseCode = 200
+2019-05-14 14:51:44 INFO  ApacheHttpClient.testConnection(208) - result = true
+2019-05-14 14:52:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-14 14:52:25 INFO  ApacheHttpClient.getWebResourceAsStream(485) - responseCode = 200
+2019-05-14 14:52:26 INFO  ApacheHttpClient.getTask(471) - responseCode = 200
+2019-05-14 14:52:26 INFO  ApacheHttpClient.getWebResourceAsStream(485) - responseCode = 200
+2019-05-14 14:52:29 INFO  ApacheHttpClient.completed(28) - responseCode = 200
+2019-05-14 14:53:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-14 14:54:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-14 14:55:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-14 14:56:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-14 14:57:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200
+2019-05-14 14:57:15 INFO  ApacheHttpClient.getWebResourceAsStream(485) - responseCode = 200
+2019-05-14 14:57:15 INFO  ApacheHttpClient.getTask(471) - responseCode = 200
+2019-05-14 14:57:16 INFO  ApacheHttpClient.getWebResourceAsStream(485) - responseCode = 200
+2019-05-14 14:57:18 INFO  ApacheHttpClient.completed(28) - responseCode = 200
+2019-05-14 14:57:18 INFO  ApacheHttpClient.getTask(471) - responseCode = 200
+2019-05-14 14:57:30 INFO  ApacheHttpClient.getWebResourceAsStream(485) - responseCode = 200
+2019-05-14 14:57:30 INFO  ApacheHttpClient.getFilteredTasks(324) - responseCode = 200
+2019-05-14 14:58:15 INFO  ApacheHttpClient.sendEvent(518) - responseCode = 200

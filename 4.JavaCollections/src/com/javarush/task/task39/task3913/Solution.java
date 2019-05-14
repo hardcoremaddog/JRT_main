@@ -30,8 +30,5 @@ public class Solution {
 //        System.out.println(logParser.getDatesWhenUserWroteMessage("Peduard Petrovich Morozko",null, null));
 
         //QLQueryTest
-        for (Object o : logParser.execute("get ip for user = \"Eduard Petrovich Morozko\" and date between \"11.12.2013 0:00:00\" and \"03.01.2014 23:59:59\"")) {
-            System.out.println(o.toString());
-        }
     }
 }
