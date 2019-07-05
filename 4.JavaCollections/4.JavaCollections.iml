@@ -16,5 +16,6 @@
     <orderEntry type="library" name="org.jsoup:jsoup:1.11.3" level="project" />
     <orderEntry type="library" name="org.slf4j:slf4j-api:1.7.26" level="project" />
     <orderEntry type="library" name="javax.xml.bind:jaxb-api:2.3.1" level="project" />
+    <orderEntry type="library" name="org.apache.httpcomponents:httpclient:4.5.9" level="project" />
   </component>
 </module>

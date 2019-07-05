@@ -14,7 +14,6 @@ public class Solution {
 				{1, 1, 1, 1, 1},
 				{0, 0, 0, 0, 0}
 		};
-
 		System.out.println(maxSquare(matrix));
 	}
 
@@ -61,7 +60,6 @@ public class Solution {
 				}
 			}
 		}
-
 
 		for (i = max_i; i > max_i - max_of_s; i--) {
 			for (j = max_j; j > max_j - max_of_s; j--) {
