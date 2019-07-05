@@ -22,8 +22,8 @@ public class Solution {
 		int square = 0;
 
 		int i, j;
-		int R = matrix.length;         //no of rows in M[][]
-		int C = matrix[0].length;     //no of columns in M[][]
+		int R = matrix.length;         //no of rows in matrix[][]
+		int C = matrix[0].length;     //no of columns in matrix[][]
 		int[][] S = new int[R][C];
 
 		int max_of_s, max_i, max_j;
