@@ -14,7 +14,7 @@ public class Solution {
         decodeURLString("nourljustexample");
     }
 
-    public static void decodeURLString(String s) throws MalformedURLException {
+    public static void decodeURLString(String s) {
         URL url = null;
         try {
             url = new URL(s);
