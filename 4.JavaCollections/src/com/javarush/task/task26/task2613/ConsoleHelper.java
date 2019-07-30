@@ -23,7 +23,7 @@ public class ConsoleHelper {
 
     public static String askCurrencyCode() {
         while (true) {
-            System.out.println("Enter a currency code: ");
+            writeMessage("Enter a currency code: ");
             String code = readString();
 
             if (code == null || code.length() != 3) {
@@ -36,7 +36,7 @@ public class ConsoleHelper {
 
     public static String[] getValidTwoDigits(String currencyCode) {
         while (true) {
-            System.out.println("Enter a two positive numbers: ");
+            writeMessage("Enter a two positive numbers: ");
             String readLine = readString();
 
             if (readLine != null) {
