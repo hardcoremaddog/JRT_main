@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 
 public class ConsoleHelper {
 
+    private static final String INVALID_DATA_MESSAGE = "Invalid data! Please, try again...";
     private static BufferedReader bis = new BufferedReader(new InputStreamReader(System.in));
 
     public static void writeMessage(String message) {
@@ -16,56 +17,39 @@ public class ConsoleHelper {
         try {
             return bis.readLine();
         } catch (IOException e) {
-        }
-        return null;
-    }
-
-    public static String askCurrencyCode() {
-        try {
-            System.out.println("Введите три символа кода валюты: ");
-            String code = bis.readLine();
-
-            while (code.length() != 3) {
-                System.out.println("Введены некорректные данные. Повторите ввод: ");
-                code = bis.readLine();
-            }
-
-            return code.toUpperCase();
-        } catch (IOException e) {
             return null;
         }
     }
 
-    public static String[] getValidTwoDigits(String currencyCode) {
-        String invalidDataMessage = "Введены некорректные данные. Повторите ввод: ";
-        try {
-            System.out.println("Введите целых положительных числа: ");
+    public static String askCurrencyCode() {
+        while (true) {
+            System.out.println("Enter a currency code: ");
+            String code = readString();
 
-            String readLine = bis.readLine();
-            String[] twoDigits = readLine.split(" ");
-
-            while (twoDigits.length != 2) {
-                System.out.println(invalidDataMessage);
-                readLine = bis.readLine();
-                twoDigits = readLine.split(" ");
+            if (code == null || code.length() != 3) {
+                writeMessage(INVALID_DATA_MESSAGE);
+            } else {
+                return code.toUpperCase();
             }
-
-            int a = Integer.parseInt(twoDigits[0]);
-            int b = Integer.parseInt(twoDigits[1]);
-
-            while (a <= 0 || b <= 0) {
-                System.out.println(invalidDataMessage);
-                readLine = bis.readLine();
-                twoDigits = readLine.split(" ");
-                a = Integer.parseInt(twoDigits[0]);
-                b = Integer.parseInt(twoDigits[1]);
-            }
-
-            return twoDigits;
-        } catch (IOException | NumberFormatException e) {
-            System.out.println(invalidDataMessage);
-            getValidTwoDigits(currencyCode);
         }
-        return null;
+    }
+
+    public static String[] getValidTwoDigits(String currencyCode) {
+        while (true) {
+            System.out.println("Enter a two positive numbers: ");
+            String readLine = readString();
+
+            if (readLine != null) {
+                String[] twoDigits = readLine.split(" ");
+
+                if (twoDigits.length != 2
+                        || !readLine.replaceAll(" ", "").matches("\\d+")
+                        || (Integer.parseInt(twoDigits[0]) <= 0 || Integer.parseInt(twoDigits[1]) <= 0)) {
+                    writeMessage(INVALID_DATA_MESSAGE);
+                    continue;
+                }
+                return twoDigits;
+            }
+        }
     }
 }
