@@ -34,6 +34,21 @@ public class ConsoleHelper {
         }
     }
 
+    public static Operation askOperation() {
+        while (true) {
+            String readLine = readString();
+
+            if (readLine != null) {
+                try {
+                    int operationId = Integer.parseInt(readLine);
+                    return Operation.getAllowableOperationByOrdinal(operationId);
+                } catch (IllegalArgumentException e) {
+                    writeMessage(INVALID_DATA_MESSAGE);
+                }
+            }
+        }
+    }
+
     public static String[] getValidTwoDigits(String currencyCode) {
         while (true) {
             writeMessage("Enter a two positive numbers: ");
