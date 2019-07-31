@@ -36,6 +36,11 @@ public class ConsoleHelper {
 
     public static Operation askOperation() {
         while (true) {
+            writeMessage("Enter an operation number \n"
+            + "1 - INFO \n"
+            + "2 - DEPOSIT \n"
+            + "3 - WITHDRAW \n"
+            + "4 - EXIT");
             String readLine = readString();
 
             if (readLine != null) {
