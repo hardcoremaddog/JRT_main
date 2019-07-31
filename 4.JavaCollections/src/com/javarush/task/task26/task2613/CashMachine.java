@@ -12,14 +12,11 @@ public class CashMachine {
 
         CurrencyManipulator manipulator = CurrencyManipulatorFactory.getManipulatorByCurrencyCode(currency);
 
-        if (twoValidDigits != null) {
-            int denomination = Integer.parseInt(twoValidDigits[0]);
-            int count = Integer.parseInt(twoValidDigits[1]);
+        int denomination = Integer.parseInt(twoValidDigits[0]);
+        int count = Integer.parseInt(twoValidDigits[1]);
 
-            manipulator.addAmount(denomination, count);
-        } else {
-            System.out.println("twoValidDigits == null");
-            System.exit(1);
-        }
+        manipulator.addAmount(denomination, count);
+
+        System.out.println(manipulator.getTotalAmount());
     }
 }
