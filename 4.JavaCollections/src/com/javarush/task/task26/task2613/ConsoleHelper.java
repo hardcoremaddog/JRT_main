@@ -41,6 +41,21 @@ public class ConsoleHelper {
         }
     }
 
+    public static String askAmount() throws InterruptOperationException {
+        while (true) {
+            writeMessage("Enter the amount to withdraw: ");
+            String readLine = readString();
+
+            if (readLine == null
+                    || !readLine.replaceAll(" ", "").matches("\\d+")) {
+                writeMessage(INVALID_DATA_MESSAGE);
+            } else {
+                return readLine;
+            }
+        }
+    }
+
+
     public static Operation askOperation() throws InterruptOperationException {
         while (true) {
             writeMessage("Enter an operation number \n"
