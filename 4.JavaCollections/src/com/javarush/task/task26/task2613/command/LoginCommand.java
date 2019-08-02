@@ -1,12 +1,14 @@
 package com.javarush.task.task26.task2613.command;
 
+import com.javarush.task.task26.task2613.CashMachine;
 import com.javarush.task.task26.task2613.ConsoleHelper;
 import com.javarush.task.task26.task2613.exception.InterruptOperationException;
 
+import java.util.ResourceBundle;
+
 public class LoginCommand implements Command {
 
-    private final String validCardNumber = "123456789012";
-    private final String validPin = "1234";
+    private ResourceBundle validCreditCards = ResourceBundle.getBundle(CashMachine.RESOURCE_PATH + ".verifiedCards");
 
     @Override
     public void execute() throws InterruptOperationException {
@@ -20,9 +22,11 @@ public class LoginCommand implements Command {
 
                 if (cardNumber != null && cardPin != null) {
                     if (cardNumber.length() != 11 && cardPin.length() != 3) {
-                        if (cardNumber.equals(validCardNumber) && cardPin.equals(validPin)) {
-                            ConsoleHelper.writeMessage("Validation successful!");
-                            break;
+                        if (validCreditCards.containsKey(cardNumber)) {
+                            if (validCreditCards.getObject(cardNumber).equals(cardPin)) {
+                                ConsoleHelper.writeMessage("Validation successful!");
+                                break;
+                            }
                         }
                     }
                 }

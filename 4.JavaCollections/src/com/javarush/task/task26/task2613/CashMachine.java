@@ -8,6 +8,8 @@ import java.util.Locale;
 
 public class CashMachine {
 
+    public static final String RESOURCE_PATH = CashMachine.class.getPackage().getName() + ".resources.";
+
     public static void main(String[] args) {
         try {
             Locale.setDefault(Locale.ENGLISH);
