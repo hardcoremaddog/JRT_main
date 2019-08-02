@@ -8,7 +8,7 @@ import java.io.InputStreamReader;
 
 public class ConsoleHelper {
 
-    private static final String INVALID_DATA_MESSAGE = "Invalid data! Please, try again...";
+    public static final String INVALID_DATA_MESSAGE = "Invalid data! Please, try again...";
     private static BufferedReader bis = new BufferedReader(new InputStreamReader(System.in));
 
     public static void writeMessage(String message) {
@@ -59,10 +59,10 @@ public class ConsoleHelper {
     public static Operation askOperation() throws InterruptOperationException {
         while (true) {
             writeMessage("Enter an operation number \n"
-            + "1 - INFO \n"
-            + "2 - DEPOSIT \n"
-            + "3 - WITHDRAW \n"
-            + "4 - EXIT");
+                    + "1 - INFO \n"
+                    + "2 - DEPOSIT \n"
+                    + "3 - WITHDRAW \n"
+                    + "4 - EXIT");
             String readLine = readString();
 
             if (readLine != null) {

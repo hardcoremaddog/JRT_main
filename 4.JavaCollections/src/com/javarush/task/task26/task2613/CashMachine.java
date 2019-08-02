@@ -13,6 +13,8 @@ public class CashMachine {
             Locale.setDefault(Locale.ENGLISH);
 
             while (true) {
+                CommandExecutor.execute(Operation.LOGIN);
+
                 Operation operation = ConsoleHelper.askOperation();
                 CommandExecutor.execute(operation);
 
