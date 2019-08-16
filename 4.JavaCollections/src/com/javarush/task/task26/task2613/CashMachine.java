@@ -25,7 +25,7 @@ public class CashMachine {
                 }
             }
         } catch (InterruptOperationException e) {
-            ConsoleHelper.writeMessage("Good bye!");
+            ConsoleHelper.printExitMessage();
         } catch (NotEnoughMoneyException e) {
             ConsoleHelper.writeMessage("Not enough money in ATM!");
         }
