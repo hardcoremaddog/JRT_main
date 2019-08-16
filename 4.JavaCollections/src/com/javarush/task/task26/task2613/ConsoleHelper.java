@@ -5,11 +5,13 @@ import com.javarush.task.task26.task2613.exception.InterruptOperationException;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ResourceBundle;
 
 public class ConsoleHelper {
 
     public static final String INVALID_DATA_MESSAGE = "Invalid data! Please, try again...";
     private static BufferedReader bis = new BufferedReader(new InputStreamReader(System.in));
+    private static ResourceBundle res = ResourceBundle.getBundle(CashMachine.RESOURCE_PATH + "common_en");
 
     public static void writeMessage(String message) {
         System.out.println(message);
